@@ -4,7 +4,7 @@
 
 <ul class="links">
     
-    <li class="link">
+    <li class="link" onmouseover="hvLink(event)">
         <div class="link-title">
             <a>NOSOTROS</a>
         </div>
@@ -61,6 +61,11 @@
     </li>
 </ul>
 
+<script>
+    function hvLink(e){
+        console.log(e.target)
 
+    }
+</script>
 </header>
 

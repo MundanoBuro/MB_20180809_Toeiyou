@@ -37,7 +37,7 @@ $state = ['current' => $current];
     <body>
     
         <div class="preload">
-            @include('components.preloader');
+            @include('components.preloader')
         </div>
 
         <div class="loaded">

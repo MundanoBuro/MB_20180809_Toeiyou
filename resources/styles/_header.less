@@ -3,19 +3,48 @@
   margin: 0px;
   font-family: "font-black";
   .display-row-space();
+
+  border-bottom: 1px solid @color-dark-green;
+  font-size: 10pt;
 }
 
 .header .logo {
-  display: block;
-  width: 30%;
-  margin: 0 auto;
+  display: inline-block;
+  height: calc(3.5vw + 3.5vh);
+  height: 40pt;
+  margin: 1em 2em;
 }
 
 .header .links {
+  display: inline-block;
+  padding: 1em;
+  margin: 0px;
 }
 
 .header .link {
   display: inline-block;
+  padding: 0em 1em;
+  color: @color-dark-green;
+  .link-title {
+    &:before {
+      content: "";
+      background: url("../../public/ico/gi-header-div.png");
+      width: 0.5em;
+      height: 1.5em;
+      display: inline-block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+      left: -0.5em;
+      top: 0.7em;
+      transform: rotate(0deg);
+    }
+  }
+  .link-title.onHover {
+    &:before {
+      transform: rotate(90deg);
+    }
+  }
 }
 
 .header .sublink {
