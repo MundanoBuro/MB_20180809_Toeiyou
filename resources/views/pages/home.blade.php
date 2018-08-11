@@ -25,7 +25,6 @@ $state = ['current' => $current];
     {{-------------------------------------------------}}  
     <head>
         @include('components.meta', $metaTags)
-        <link rel="stylesheet" href="css/main.css">
     </head>
     {{-------------------------------------------------}}
 
@@ -42,11 +41,15 @@ $state = ['current' => $current];
 
         <div class="loaded">
             @include('components.header',$state)
-            <main></main>
+            <main>
+
+                @include('components.slider')
+
+            </main>
             @include('components.footer')
         </div>
 
-        
+        <link rel="stylesheet" href="css/main.css">
     </body>
     {{-------------------------------------------------}}
 

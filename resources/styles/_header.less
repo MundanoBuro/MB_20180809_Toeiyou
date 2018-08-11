@@ -1,3 +1,121 @@
+// ------------------------------- //
+.header {
+  width: 100vw;
+  height: auto;
+  color: @color-dark-green;
+  font-size: 10pt;
+  padding: 0px;
+  margin: 0px;
+  font-family: "font-black";
+  position: fixed;
+  top: 0px;
+  .display-col-center-center();
+  li {
+    display: inline-block;
+  }
+  ul {
+    padding: 0px;
+    margin: 0px;
+  }
+  .row {
+    width: 100%;
+    border-bottom: 1px solid @color-dark-green;
+    .display-row-space();
+    &.last {
+      height: auto;
+      border-bottom: 1px solid rgba(0, 0, 0, 0);
+      .flex-display(flex);
+      .flex-direction(row);
+      .flex-wrap(nowrap);
+      .justify-content(flex-end);
+      .align-content(center);
+      .align-items(center);
+    }
+  }
+}
+.header .logo {
+  display: inline-block;
+  height: 40pt;
+  margin: 1em 2em;
+}
+// ------------------------------- //
+.header .links-title {
+  width: 50em;
+  height: 20pt;
+  cursor: pointer;
+  img {
+    width: 0.5em;
+    display: inline-block;
+    position: relative;
+    left: 0em;
+    top: 0em;
+    padding: 0em 0.5em;
+  }
+  .display-row-space();
+}
+.header .link-title {
+  width: 8em;
+  height: 60pt;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  &.onHover {
+    border-bottom: 2px solid @color-dark-green;
+    img {
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -webkit-transition: all 700ms ease-in-out;
+      -moz-transition: all 700ms ease-in-out;
+      -ms-transition: all 700ms ease-in-out;
+      -o-transition: all 700ms ease-in-out;
+      transition: all 700ms ease-in-out;
+    }
+  }
+  a {
+    text-align: center;
+  }
+  .display-row-space();
+  .justify-content(flex-start);
+}
+.header .links-content {
+  width: 50em;
+  height: auto;
+  .display-row-space();
+}
+.header .link-content {
+  width: 10em;
+  display: block;
+}
+.header .sublinks {
+  width: 100%;
+  height: fit-content;
+  .display-col-center-center();
+}
+.header .sublink {
+  padding: 0.5em 0em;
+  margin: 0.5em 0em;
+  width: 10em;
+  text-align: center;
+  background-color: black;
+}
+.header .sublink {
+  display: none;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.header .onHover .sublink {
+  display: block;
+}
+/*
 .header {
   padding: 0px;
   margin: 0px;
@@ -17,36 +135,61 @@
 
 .header .links {
   display: inline-block;
-  padding: 1em;
+  padding: 0em 1em;
   margin: 0px;
+  height: 6em;
+  .display-row-center-center();
 }
 
 .header .link {
   display: inline-block;
   padding: 0em 1em;
   color: @color-dark-green;
+  cursor: pointer;
+  .display-col-center-center();
   .link-title {
-    &:before {
-      content: "";
-      background: url("../../public/ico/gi-header-div.png");
+    height: 6em;
+    border-bottom: 2px solid white;
+    img {
       width: 0.5em;
-      height: 1.5em;
       display: inline-block;
-      background-size: contain;
-      background-repeat: no-repeat;
       position: relative;
       left: -0.5em;
-      top: 0.7em;
+      top: 0em;
       transform: rotate(0deg);
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
     }
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    .display-row-center-center();
   }
-  .link-title.onHover {
-    &:before {
+
+  &.onHover .link-title {
+    border-bottom: 2px solid @color-dark-green;
+    img {
       transform: rotate(90deg);
+      top: 0em;
     }
   }
 }
 
-.header .sublink {
-  display: none;
+.header .link .link-content {
+  display: inline-block;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
+
+.header .link.onHover .link-content {
+  display: inline-block;
+}
+*/
