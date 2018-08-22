@@ -21,23 +21,74 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('pages.about');
+    return view('pages.about')->with('name', 'Home')
+                             ->with('title', 'Gastro-Innova')
+                             ->with('keywords', 'Comidas,Proprocesador')
+                             ->with('description', 'Gastro Innova')
+                             ->with('author', 'www.jlmayorga.com.co')
+                             ->with('current', 'home');
 });
 Route::get('/business', function () {
-    return view('pages.business');
+    return view('pages.business')->with('name', 'Home')
+                             ->with('title', 'Gastro-Innova')
+                             ->with('keywords', 'Comidas,Proprocesador')
+                             ->with('description', 'Gastro Innova')
+                             ->with('author', 'www.jlmayorga.com.co')
+                             ->with('current', 'home');
 });
 Route::get('/clients', function () {
-    return view('pages.clients');
+    return view('pages.clients')->with('name', 'Home')
+                             ->with('title', 'Gastro-Innova')
+                             ->with('keywords', 'Comidas,Proprocesador')
+                             ->with('description', 'Gastro Innova')
+                             ->with('author', 'www.jlmayorga.com.co')
+                             ->with('current', 'home');
 });
 Route::get('/contact', function () {
-    return view('pages.contact');
+    return view('pages.contact')->with('name', 'Home')
+                             ->with('title', 'Gastro-Innova')
+                             ->with('keywords', 'Comidas,Proprocesador')
+                             ->with('description', 'Gastro Innova')
+                             ->with('author', 'www.jlmayorga.com.co')
+                             ->with('current', 'home');
 });
 Route::get('/industry', function () {
-    return view('pages.industry');
+    return view('pages.industry')->with('name', 'Home')
+                             ->with('title', 'Gastro-Innova')
+                             ->with('keywords', 'Comidas,Proprocesador')
+                             ->with('description', 'Gastro Innova')
+                             ->with('author', 'www.jlmayorga.com.co')
+                             ->with('current', 'home');
 });
 Route::get('/news', function () {
-    return view('pages.news');
+    return view('pages.news')->with('name', 'Home')
+                             ->with('title', 'Gastro-Innova')
+                             ->with('keywords', 'Comidas,Proprocesador')
+                             ->with('description', 'Gastro Innova')
+                             ->with('author', 'www.jlmayorga.com.co')
+                             ->with('current', 'home');
 });
 Route::get('/admin', function () {
-    return view('pages.admin');
+    return view('pages.admin')->with('name', 'Home')
+                             ->with('title', 'Gastro-Innova')
+                             ->with('keywords', 'Comidas,Proprocesador')
+                             ->with('description', 'Gastro Innova')
+                             ->with('author', 'www.jlmayorga.com.co')
+                             ->with('current', 'home');
+});
+Route::get('/terms', function () {
+    return view('pages.terms')->with('name', 'Home')
+                             ->with('title', 'Gastro-Innova')
+                             ->with('keywords', 'Comidas,Proprocesador')
+                             ->with('description', 'Gastro Innova')
+                             ->with('author', 'www.jlmayorga.com.co')
+                             ->with('current', 'home');
+});
+Route::get('/policies', function () {
+    return view('pages.policies')->with('name', 'Home')
+                             ->with('title', 'Gastro-Innova')
+                             ->with('keywords', 'Comidas,Proprocesador')
+                             ->with('description', 'Gastro Innova')
+                             ->with('author', 'www.jlmayorga.com.co')
+                             ->with('current', 'home');
 });

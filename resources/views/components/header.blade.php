@@ -1,96 +1,57 @@
-<header class="mm header">
+<header class="navbar">
+    <div class="wrapper">
+        <a href="/">
+        <img class="nav-logo" src="ico/gi-logo.png">
+        </a>
+        <ul class="nav-links">
 
-    <div class="row">
-        <img class="logo" src="{{ url('ico/gi-logo.png') }}">
-
-        <ul class="links-title">
+            <li class ="nav-link">
+                <a href="/about">
+                <div class="nav-link-title">
+                    <span>NOSOTROS</span>
+                </div>
+                </a>
+                <div class="nav-link-menu">
+                    <a class="nav-link-menu-item">MISION</a>
+                    <a class="nav-link-menu-item">VISION</a>
+                    <a class="nav-link-menu-item">NUESTRA GENTE</a>
+                </div>
+            </li>
+            <li class ="nav-link">
+                <a href="/business">
+                <div class="nav-link-title">LÍNEAS DE NEGOCIOS</div>
+                </a>
+                <div class="nav-link-menu">
+                    <a class="nav-link-menu-item">DELIZ</a>
+                    <a class="nav-link-menu-item">READY MEALS</a>
+                    <a class="nav-link-menu-item">START  UPS <br>GASTRONOMICAS</a>
+                </div>
+            </li>
+            <li class ="nav-link">
+                <a href="/industry">
+                <div class="nav-link-title">INFORMACIÓN DEL SECTOR</div> </a>
+                <div class="nav-link-menu">
+                    <a class="nav-link-menu-item">SUBMENU 1</a>
+                    <a class="nav-link-menu-item">SUBMENU 2</a>
+                    <a class="nav-link-menu-item">SUBMENU 3</a>
+                </div>
+            </li>
             
-            <li class="link-title" id="link-about" onmouseover="hvLink('about')" onmouseout="blLink('about')">
-                    <img src="ico/gi-header-div.png">
-                    <a>NOSOTROS</a>
+            <li class ="nav-link">
+                <a class="nav-link-title" href="/clients">CLIENTES</a>
             </li>
-            <li class="link-title" id="link-business" onmouseover="hvLink('business')" onmouseout="blLink('business')">
-                    <img src="ico/gi-header-div.png">
-                    <a>LÍNEAS DE NEGOCIO</a>
+            <li class ="nav-link">
+                <a class="nav-link-title" href="/news">NOTICIAS</a>
             </li>
-            <li class="link-title" id="link-industry" onmouseover="hvLink('industry')" onmouseout="blLink('industry')">
-                    <img src="ico/gi-header-div.png">
-                    <a>INFORMACIÓN DEL SECTOR</a>
+            <li class ="nav-link">
+                <a class="nav-link-title" href="/contact">CONTACTO</a>
             </li>
-            <li class="link-title" id="link-clients" onmouseover="hvLink('clients')" onmouseout="blLink('clients')">
-                    <img src="ico/gi-header-div.png">
-                    <a>CLIENTES</a>
-                </li>
-            <li class="link-title" id="link-contact" onmouseover="hvLink('contact')" onmouseout="blLink('contact')">
-                    <img src="ico/gi-header-div.png">
-                    <a>CONTACTO</a>
-        </li>
 
         </ul>
     </div>
-
-    <div class="row last">
-        <ul class="links-content">
-            <li class="link-content" id="link-content-about" onmouseover="hvLink('about')" onmouseout="blLink('about')">
-                <ul class="sublinks">
-                    <li class="sublink"><a>sublink1</a></li>
-                    <li class="sublink"><a>sublink2</a></li>
-                    <li class="sublink"><a>sublink3</a></li>
-                </ul>
-            </li>
-             <li class="link-content" id="link-content-business">
-                <ul class="sublinks">
-                    <li class="sublink"><a>sublink1</a></li>
-                    <li class="sublink"><a>sublink2</a></li>
-                    <li class="sublink"><a>sublink3</a></li>
-                </ul>
-            </li>
-             <li class="link-content" id="link-content-industry">
-                <ul class="sublinks">
-                    <li class="sublink"><a>sublink1</a></li>
-                    <li class="sublink"><a>sublink2</a></li>
-                    <li class="sublink"><a>sublink3</a></li>
-                </ul>
-            </li>
-             <li class="link-content" id="link-content-clients">
-                <ul class="sublinks">
-                    <li class="sublink"><a>sublink1</a></li>
-                    <li class="sublink"><a>sublink2</a></li>
-                    <li class="sublink"><a>sublink3</a></li>
-                </ul>
-            </li>
-            <li class="link-content" id="link-content-contact">
-                <ul class="sublinks">
-                    <li class="sublink"><a>sublink1</a></li>
-                    <li class="sublink"><a>sublink2</a></li>
-                    <li class="sublink"><a>sublink3</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <script>
-        function hvLink(target){
-            setTimeout(function(){
-            var target_id = 'link-'+target;
-            var target_content_id = 'link-content-'+target;
-            var link_title = document.getElementById(target_id);
-            var link_content = document.getElementById(target_content_id);
-            link_title.classList.add("onHover");
-            link_content.classList.add("onHover");
-            },200);
-        }
-        function blLink(target){
-            setTimeout(function(){
-           var target_id = 'link-'+target;
-            var target_content_id = 'link-content-'+target;
-            var link_title = document.getElementById(target_id);
-            var link_content = document.getElementById(target_content_id);
-            link_title.classList.remove("onHover");
-            link_content.classList.remove("onHover");
-            },200);
-        }
-    </script>
-
 </header>
 
+<style>
+
+
+</style>

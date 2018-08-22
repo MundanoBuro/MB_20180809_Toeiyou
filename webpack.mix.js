@@ -12,6 +12,7 @@ let mix = require("laravel-mix");
  */
 
 mix
-  .js("resources/assets/js/app.js", "public/js")
+  .less("resources/styles/main.less", "public/css")
   .sass("resources/assets/sass/app.scss", "public/css")
-  .less("resources/styles/main.less", "public/css");
+  .js("resources/scripts/main.js", "public/js")
+  .js("resources/scripts/_preload.js", "public/js");

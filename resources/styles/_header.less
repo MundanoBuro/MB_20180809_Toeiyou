@@ -1,195 +1,125 @@
-// ------------------------------- //
-.header {
-  width: 100vw;
-  height: auto;
-  color: @color-dark-green;
-  font-size: 10pt;
-  padding: 0px;
-  margin: 0px;
-  font-family: "font-black";
+.navbar {
+  display: block;
+  width: 100%;
+  z-index: 100;
   position: fixed;
   top: 0px;
-  .display-col-center-center();
-  li {
-    display: inline-block;
-  }
-  ul {
-    padding: 0px;
-    margin: 0px;
-  }
-  .row {
-    width: 100%;
-    border-bottom: 1px solid @color-dark-green;
-    .display-row-space();
-    &.last {
-      height: auto;
-      border-bottom: 1px solid rgba(0, 0, 0, 0);
-      .flex-display(flex);
-      .flex-direction(row);
-      .flex-wrap(nowrap);
-      .justify-content(flex-end);
-      .align-content(center);
-      .align-items(center);
-    }
-  }
+  background-color: white;
 }
-.header .logo {
-  display: inline-block;
-  height: 40pt;
-  margin: 1em 2em;
+
+.navbar {
+  border-bottom: 1px solid green;
 }
-// ------------------------------- //
-.header .links-title {
-  width: 50em;
-  height: 20pt;
-  cursor: pointer;
-  img {
-    width: 0.5em;
-    display: inline-block;
-    position: relative;
-    left: 0em;
-    top: 0em;
-    padding: 0em 0.5em;
-  }
-  .display-row-space();
-}
-.header .link-title {
-  width: 8em;
+
+.navbar .wrapper {
   height: 60pt;
-  border-bottom: 2px solid rgba(0, 0, 0, 0);
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-  &.onHover {
-    border-bottom: 2px solid @color-dark-green;
-    img {
-      transform: rotate(90deg);
-      -webkit-transform: rotate(90deg);
-      -moz-transform: rotate(90deg);
-      -o-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      -webkit-transition: all 700ms ease-in-out;
-      -moz-transition: all 700ms ease-in-out;
-      -ms-transition: all 700ms ease-in-out;
-      -o-transition: all 700ms ease-in-out;
-      transition: all 700ms ease-in-out;
-    }
-  }
-  a {
-    text-align: center;
-  }
-  .display-row-space();
-  .justify-content(flex-start);
-}
-.header .links-content {
-  width: 50em;
-  height: auto;
+  max-width: @max-width;
+  margin: 0 auto;
   .display-row-space();
 }
-.header .link-content {
-  width: 10em;
-  display: block;
-}
-.header .sublinks {
-  width: 100%;
-  height: fit-content;
-  .display-col-center-center();
-}
-.header .sublink {
-  padding: 0.5em 0em;
-  margin: 0.5em 0em;
-  width: 10em;
-  text-align: center;
-  background-color: black;
-}
-.header .sublink {
-  display: none;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-}
-.header .onHover .sublink {
-  display: block;
-}
-/*
-.header {
-  padding: 0px;
-  margin: 0px;
-  font-family: "font-black";
-  .display-row-space();
 
-  border-bottom: 1px solid @color-dark-green;
-  font-size: 10pt;
-}
-
-.header .logo {
+.nav-logo {
+  width: 70pt;
   display: inline-block;
-  height: calc(3.5vw + 3.5vh);
-  height: 40pt;
-  margin: 1em 2em;
+  box-sizing: border-box;
+  padding: 10px;
+  z-index: 25;
 }
 
-.header .links {
+.nav-links {
+  width: fit-content;
+  height: 60pt;
+  font-size: 14px;
+  vertical-align: middle;
   display: inline-block;
-  padding: 0em 1em;
-  margin: 0px;
-  height: 6em;
-  .display-row-center-center();
-}
-
-.header .link {
-  display: inline-block;
-  padding: 0em 1em;
+  font-family: "font-light";
+  font-weight: 800;
   color: @color-dark-green;
+  .display-row-space();
+}
+.nav-link {
+  display: inline-block;
+  height: 60pt;
+  margin-right: 2.5em;
+  vertical-align: middle;
+
   cursor: pointer;
+
+  .align-items(flex-start);
+}
+.nav-link-title {
+  width: 100%;
+  height: 60pt;
+  z-index: 10;
+  background-color: white;
   .display-col-center-center();
-  .link-title {
-    height: 6em;
-    border-bottom: 2px solid white;
-    img {
-      width: 0.5em;
-      display: inline-block;
-      position: relative;
-      left: -0.5em;
-      top: 0em;
-      transform: rotate(0deg);
+  .align-items(flex-start);
+}
+.nav-link-menu {
+  width: 100%;
+  background-color: white;
+  height: fit-content;
+  z-index: -10;
+  position: relative;
+  top: -35em;
+  .display-col-center-center();
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.nav-link-menu-item {
+  padding: 1em 1em;
+
+  color: black;
+  font-size: 0.8em;
+
+  width: 100%;
+
+  box-sizing: border-box;
+  text-align: center;
+
+  background-color: rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid @color-dark-green;
+  &:hover {
+    background-color: @color-yellow;
+    color: white;
+  }
+  &:first-child {
+    border-top: 1px solid @color-dark-green;
+  }
+}
+
+.nav-link {
+  &:hover {
+    color: #666;
+    .nav-link-menu {
+      top: 0px;
       -webkit-transition: all 500ms ease-in-out;
       -moz-transition: all 500ms ease-in-out;
       -ms-transition: all 500ms ease-in-out;
       -o-transition: all 500ms ease-in-out;
       transition: all 500ms ease-in-out;
     }
-    -webkit-transition: all 200ms ease-in-out;
-    -moz-transition: all 200ms ease-in-out;
-    -ms-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
-    .display-row-center-center();
-  }
-
-  &.onHover .link-title {
-    border-bottom: 2px solid @color-dark-green;
-    img {
-      transform: rotate(90deg);
-      top: 0em;
-    }
   }
 }
-
-.header .link .link-content {
-  display: inline-block;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+.nav-link:nth-child(1) {
+  width: 8em;
 }
-
-.header .link.onHover .link-content {
-  display: inline-block;
+.nav-link:nth-child(2) {
+  width: 8em;
 }
-*/
+.nav-link:nth-child(3) {
+  width: 10em;
+}
+.nav-link:nth-child(4) {
+  width: 7em;
+}
+.nav-link:nth-child(5) {
+  width: 7em;
+}
+.nav-link:nth-child(6) {
+  width: 7em;
+  padding-right: 2em;
+}

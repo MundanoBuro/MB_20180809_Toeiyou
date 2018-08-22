@@ -1,0 +1,46 @@
+section.info {
+  min-height: 150pt;
+  width: 100%;
+  max-width: @max-width;
+  margin: 0 auto;
+  .display-row-space();
+
+  .card {
+    width: 33.3333%;
+    padding: 2em 0em;
+    height: fit-content;
+    &:first-child {
+      padding-left: 0em;
+      padding-right: 2em;
+    }
+    &:last-child {
+      padding-right: 0em;
+      padding-left: 2em;
+    }
+    .cover {
+      height: 10em;
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
+    }
+    .banner {
+      height: 2.5em;
+      width: 100%;
+      background-color: black;
+      color: #fff;
+      font-family: "font-light";
+      font-weight: 800;
+      .display-row-center-center();
+    }
+
+    &.deliz .banner {
+      background-color: @color-blue;
+    }
+    &.startups .banner {
+      background-color: @color-yellow;
+    }
+    &.pitadora .banner {
+      background-color: @color-orange;
+    }
+  }
+}
