@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -82,20 +82,39 @@ function preloading() {
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-__webpack_require__(2);
-__webpack_require__(3);
-module.exports = __webpack_require__(4);
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["openCard"] = openCard;
+function openCard(id) {
 
+    //Order
+
+    // Scroll to Card
+
+    $('html,body').animate({
+        scrollTop: $(id).offset().top - 60
+    }, 1500, function () {});
+}
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(3);
+__webpack_require__(4);
+module.exports = __webpack_require__(5);
+
+
+/***/ }),
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__preload_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ui_js__ = __webpack_require__(1);
 // --------------------------------- //
 
 
@@ -108,12 +127,16 @@ $(document).ready(function () {
   Object(__WEBPACK_IMPORTED_MODULE_0__preload_js__["preloading"])();
   var myswiper = new Swiper(".swiper-container", {
     parallax: true,
+    autoplay: 0,
     direction: "horizontal",
-    loop: true,
+    loop: "true",
     speed: 1000,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
+    },
+    pagination: {
+      el: ".swiper-pagination"
     },
     on: {
       init: function init() {
@@ -124,16 +147,30 @@ $(document).ready(function () {
       }
     }
   });
+
+  var href = location.href;
+  var href_index = href.indexOf("#") + 1;
+  var anchor = href.substring(href_index);
+  var targets = href.split('#');
+  var target_page_raw = targets[0].split("/");
+  var target_page = target_page_raw[3];
+  var target_section = targets[1];
+
+  console.log(target_page);
+
+  setTimeout(function () {
+    Object(__WEBPACK_IMPORTED_MODULE_1__ui_js__["openCard"])("#" + target_page + "-" + target_section);
+  }, 1000);
 });
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

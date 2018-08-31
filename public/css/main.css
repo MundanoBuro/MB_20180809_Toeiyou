@@ -488,6 +488,8 @@ body,
 html {
   padding: 0px;
   margin: 0px;
+  width: 100vw;
+  overflow-x: hidden;
 }
 main {
   padding-top: 60pt;
@@ -535,7 +537,7 @@ main {
 .clients img.client-logos {
   display: block;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .clients section {
@@ -615,7 +617,7 @@ main {
 }
 .missionAndVision {
   font-family: "font-light";
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 2em auto;
   display: -ms-flexbox;
   display: -ms-flex;
@@ -837,7 +839,7 @@ main {
 }
 .navbar .wrapper {
   height: 60pt;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   display: -ms-flexbox;
   display: -ms-flex;
@@ -873,7 +875,7 @@ main {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 60pt;
+  height: 5rem;
   font-size: 14px;
   vertical-align: middle;
   display: inline-block;
@@ -904,7 +906,7 @@ main {
 }
 .nav-link {
   display: inline-block;
-  height: 60pt;
+  height: 5rem;
   margin-right: 2.5em;
   vertical-align: middle;
   cursor: pointer;
@@ -915,7 +917,7 @@ main {
 }
 .nav-link-title {
   width: 100%;
-  height: 60pt;
+  height: 5rem;
   z-index: 10;
   background-color: white;
   display: -ms-flexbox;
@@ -1031,7 +1033,7 @@ main {
   background-color: #343a40;
 }
 .footer .wrapper {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   display: block;
   display: -ms-flexbox;
@@ -1137,7 +1139,7 @@ main {
   font-family: "font-light";
   font-weight: 800;
   color: white;
-  padding: 2.5em;
+  padding: 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100vw;
@@ -1167,11 +1169,11 @@ main {
   font-family: "font-light";
   font-weight: 800;
   color: white;
-  padding: 2.5em 0em;
+  padding: 1em 0em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   display: -ms-flexbox;
   display: -ms-flex;
@@ -1194,10 +1196,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-align-items: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 .footer .social .social-icons {
   width: -webkit-fit-content;
@@ -1359,10 +1357,14 @@ main {
   filter: grayscale(100%) brightness(200%);
   -webkit-filter: grayscale(100%) brightness(200%);
 }
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #29a143;
+}
 section.info {
   min-height: 150pt;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   display: -ms-flexbox;
   display: -ms-flex;
@@ -1451,7 +1453,7 @@ section.info .card.pitadora .banner {
 }
 .news .row {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   display: -ms-flexbox;
   display: -ms-flex;
@@ -1619,7 +1621,7 @@ section.info .card.pitadora .banner {
           box-sizing: border-box;
 }
 .grid {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 /* clear fix */
@@ -1671,4 +1673,19 @@ section.info .card.pitadora .banner {
 .grid-item:nth-child(4) {
   margin-left: 0px;
   margin-right: 1em;
+}
+.card.c-yellow .nav {
+  background-color: #FFB90F;
+}
+.card.c-yellow .content {
+  border-top: 5px solid #FFB90F;
+}
+.card.c-green .nav {
+  background-color: #00822F;
+  border-top: 5px solid #00822F;
+}
+.card {
+  display: block;
+  width: 100%;
+  height: 200px;
 }

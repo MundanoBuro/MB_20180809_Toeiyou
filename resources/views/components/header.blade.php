@@ -12,9 +12,9 @@
                 </div>
                 </a>
                 <div class="nav-link-menu">
-                    <a class="nav-link-menu-item">MISION</a>
-                    <a class="nav-link-menu-item">VISION</a>
-                    <a class="nav-link-menu-item">NUESTRA GENTE</a>
+                    <a class="nav-link-menu-item" href="/about#mission-vision">MISIÓN y VISIÓN</a>
+                    <a class="nav-link-menu-item" href="/about#history">HISTORIA</a>
+                    <a class="nav-link-menu-item" href="/about#our-people">NUESTRA GENTE</a>
                 </div>
             </li>
             <li class ="nav-link">
@@ -22,19 +22,15 @@
                 <div class="nav-link-title">LÍNEAS DE NEGOCIOS</div>
                 </a>
                 <div class="nav-link-menu">
-                    <a class="nav-link-menu-item">DELIZ</a>
-                    <a class="nav-link-menu-item">READY MEALS</a>
-                    <a class="nav-link-menu-item">START  UPS <br>GASTRONOMICAS</a>
+                    <a class="nav-link-menu-item" href="/business#deliz">DELIZ</a>
+                    <a class="nav-link-menu-item" href="/business#ready-meals">READY MEALS</a>
+                    <a class="nav-link-menu-item" href="/business#start-ups">START  UPS <br>GASTRONOMICAS</a>
                 </div>
             </li>
             <li class ="nav-link">
                 <a href="/industry">
                 <div class="nav-link-title">INFORMACIÓN DEL SECTOR</div> </a>
-                <div class="nav-link-menu">
-                    <a class="nav-link-menu-item">SUBMENU 1</a>
-                    <a class="nav-link-menu-item">SUBMENU 2</a>
-                    <a class="nav-link-menu-item">SUBMENU 3</a>
-                </div>
+               
             </li>
             
             <li class ="nav-link">

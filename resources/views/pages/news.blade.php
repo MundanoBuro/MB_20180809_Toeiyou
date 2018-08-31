@@ -51,9 +51,9 @@ $state = ['current' => $current];
             @include('components.header',$state)
             <main>
   
-                <section class="banner" style="background-image:url('/images/about-banner.png')">
-                    <h1>NOTICIAS</h1>
-                </section>
+               <section class="slider">
+               @include('components.slider') 
+            </section>
 
             <section class="news">
                   @include('components.home.news')  

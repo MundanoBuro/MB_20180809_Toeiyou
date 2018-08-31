@@ -15,4 +15,5 @@ mix
   .less("resources/styles/main.less", "public/css")
   .sass("resources/assets/sass/app.scss", "public/css")
   .js("resources/scripts/main.js", "public/js")
-  .js("resources/scripts/_preload.js", "public/js");
+  .js("resources/scripts/_preload.js", "public/js")
+  .js("resources/scripts/_ui.js", "public/js");

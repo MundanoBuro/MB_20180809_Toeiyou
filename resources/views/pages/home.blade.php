@@ -52,7 +52,7 @@ $state = ['current' => $current];
             <main>
                
             <section class="slider">
-               @include('components.home.slider') 
+               @include('components.slider') 
             </section>
 
             {{--

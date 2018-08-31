@@ -50,9 +50,9 @@ $state = ['current' => $current];
         <div class="loaded" >
             @include('components.header',$state)
             <main class="clients">
- <section class="banner" style="background-color:#E5520F">
-                    <h1>CLIENTES</h1>
-                </section>
+<section class="slider">
+               @include('components.slider') 
+            </section>
             <section>
                  <img class="client-logos" src="images/clients-content.png">
             </section>

@@ -31,6 +31,8 @@ $state = ['current' => $current];
         <link rel="stylesheet" href="css/main.css">
         <script src="lib/swiper.min.js"></script> 
         <script src="js/app.js"></script> 
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     </head>
@@ -51,14 +53,32 @@ $state = ['current' => $current];
             @include('components.header',$state)
             <main>
                
-            <section class="banner" style="background-image:url('/images/about-banner.png')">
-                <h1>INFORMACIÓN DEL SECTOR</h1>
+
+            <section class="slider">
+            @include('components.slider') 
             </section>
 
-            <section class="">
-                <canvas id="myChart" width="400" height="400"></canvas>
-<script>
-var ctx = document.getElementById("myChart").getContext('2d');
+            <section>
+            <div class="row yellow">
+                <div class="row-header" style="width: 100%;display:block;"> TAMAÑO DEL MERCADO</div>
+                <div class="row-content">
+<canvas id="bar-chart" width="800" height="450"></canvas>
+                </div>
+            </div>
+
+            
+
+            </section>
+
+            </main>
+             @include('components.footer') 
+        </div>
+
+
+        <script src="js/main.js"></script> 
+
+        <script>
+var ctx = document.getElementById("bar-chart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
@@ -95,15 +115,8 @@ var myChart = new Chart(ctx, {
         }
     }
 });
-</script>
-            </section>
 
-            </main>
-             @include('components.footer') 
-        </div>
-
-
-        <script src="js/main.js"></script> 
+        </script>
         
     </body>
     {{-------------------------------------------------}}

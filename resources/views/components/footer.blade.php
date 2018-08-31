@@ -1,13 +1,13 @@
 <footer class="footer">
 
-    <div class="row footer-header">
+    <div class="row footer-header" style="display:none">
         <div class="wrapper">
         <h3>CONTACTO</h3>
         <h3>SITEMAP</h3>
         <h3>INFORMACIÓN</h3>
         </div>
     </div>
-    <div class="row footer-content">
+    <div class="row footer-content" style="display:none">
         <div class="wrapper">
             <div class="col contact">
                 <h1>Gastro Innova</h1>
