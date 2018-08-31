@@ -21,28 +21,28 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('pages.about')->with('name', 'Home')
-                             ->with('title', 'Gastro-Innova')
+    return view('pages.about')->with('name', 'Nosotros')
+                             ->with('title', 'Nosotros | Gastro-Innova')
                              ->with('keywords', 'Comidas,Proprocesador')
                              ->with('description', 'Gastro Innova')
                              ->with('author', 'www.jlmayorga.com.co')
-                             ->with('current', 'home');
+                             ->with('current', 'about');
 });
 Route::get('/business', function () {
-    return view('pages.business')->with('name', 'Home')
-                             ->with('title', 'Gastro-Innova')
+    return view('pages.business')->with('name', 'Lineas de Negoción')
+                             ->with('title', 'Lineas de Negoción | Gastro-Innova')
                              ->with('keywords', 'Comidas,Proprocesador')
                              ->with('description', 'Gastro Innova')
                              ->with('author', 'www.jlmayorga.com.co')
-                             ->with('current', 'home');
+                             ->with('current', 'business');
 });
 Route::get('/clients', function () {
-    return view('pages.clients')->with('name', 'Home')
-                             ->with('title', 'Gastro-Innova')
+    return view('pages.clients')->with('name', 'Nuestros Clientes')
+                             ->with('title', 'Nuestros Clientes | Gastro-Innova')
                              ->with('keywords', 'Comidas,Proprocesador')
                              ->with('description', 'Gastro Innova')
                              ->with('author', 'www.jlmayorga.com.co')
-                             ->with('current', 'home');
+                             ->with('current', 'clients');
 });
 Route::get('/contact', function () {
     return view('pages.contact')->with('name', 'Home')
@@ -50,7 +50,7 @@ Route::get('/contact', function () {
                              ->with('keywords', 'Comidas,Proprocesador')
                              ->with('description', 'Gastro Innova')
                              ->with('author', 'www.jlmayorga.com.co')
-                             ->with('current', 'home');
+                             ->with('current', 'contact');
 });
 Route::get('/industry', function () {
     return view('pages.industry')->with('name', 'Home')
@@ -58,7 +58,7 @@ Route::get('/industry', function () {
                              ->with('keywords', 'Comidas,Proprocesador')
                              ->with('description', 'Gastro Innova')
                              ->with('author', 'www.jlmayorga.com.co')
-                             ->with('current', 'home');
+                             ->with('current', 'industry');
 });
 Route::get('/news', function () {
     return view('pages.news')->with('name', 'Home')
@@ -66,7 +66,7 @@ Route::get('/news', function () {
                              ->with('keywords', 'Comidas,Proprocesador')
                              ->with('description', 'Gastro Innova')
                              ->with('author', 'www.jlmayorga.com.co')
-                             ->with('current', 'home');
+                             ->with('current', 'news');
 });
 Route::get('/admin', function () {
     return view('pages.admin')->with('name', 'Home')
@@ -74,7 +74,7 @@ Route::get('/admin', function () {
                              ->with('keywords', 'Comidas,Proprocesador')
                              ->with('description', 'Gastro Innova')
                              ->with('author', 'www.jlmayorga.com.co')
-                             ->with('current', 'home');
+                             ->with('current', 'admin');
 });
 Route::get('/terms', function () {
     return view('pages.terms')->with('name', 'Home')
@@ -82,7 +82,7 @@ Route::get('/terms', function () {
                              ->with('keywords', 'Comidas,Proprocesador')
                              ->with('description', 'Gastro Innova')
                              ->with('author', 'www.jlmayorga.com.co')
-                             ->with('current', 'home');
+                             ->with('current', 'terms');
 });
 Route::get('/policies', function () {
     return view('pages.policies')->with('name', 'Home')
@@ -90,5 +90,5 @@ Route::get('/policies', function () {
                              ->with('keywords', 'Comidas,Proprocesador')
                              ->with('description', 'Gastro Innova')
                              ->with('author', 'www.jlmayorga.com.co')
-                             ->with('current', 'home');
+                             ->with('current', 'policies');
 });

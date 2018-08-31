@@ -24,11 +24,26 @@
     </div>
     <div class="swiper-wrapper">
 
-        @for ($i = 1; $i <= 10; $i++)
+        @php
+
+           $photo_map = array('home' => 1,'about'  => 2, 'business' => 3, 'industry' => 4,  'news' => 5, 'contact' => 6, 'terms' => 7, 'clients' => 8);
+           $photo_key = $photo_map[$current];
+             
+            $photo_chunk = array_slice($photo_map,$photo_key);
+            shuffle($photo_chunk);
+            $photo_src = $photo_chunk;
+            array_unshift($photo_src ,$photo_key);
+
+            
+        @endphp
+
+        
+
+        @for ($i = 1; $i <= count($photo_src); $i++)
         <div class="swiper-slide">
 
-            <div class="wrapper slide-bg" style="background-image:url('images/slider/i{{$i}}.png')">
-
+            <div class="wrapper slide-bg" style="background-image:url('images/slider/i{{$photo_src[$i-1]}}.jpg')">
+           
             </div>
         </div>
         @endfor
@@ -41,7 +56,6 @@
     <div class="swiper-pagination"></div>
 </div>
 
- </div>
-<script>
 
-  </script>
+
+ </div>

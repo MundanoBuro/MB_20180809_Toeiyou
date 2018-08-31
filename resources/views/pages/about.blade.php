@@ -42,7 +42,7 @@ $state = ['current' => $current];
     {{-------------------------------------------------}}
     {{-- HTML::Body                                  --}}
     {{-------------------------------------------------}}
-    <body id="app">
+    <body>
     
         <div class="preload">
             @include('components.preloader')
@@ -52,7 +52,7 @@ $state = ['current' => $current];
 
             @include('components.header',$state)
 
-            <main class="about">
+            <main id="app" class="about" >
 
                 <section class="slider">
                     @include('components.slider',$state) 

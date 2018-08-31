@@ -48,10 +48,16 @@ $state = ['current' => $current];
         </div>
 
         <div class="loaded" >
+
             @include('components.header',$state)
-            <main>
+
+            <main id="app" class="contact" >
+
+                <section class="slider">
+                    @include('components.slider',$state) 
+                </section>
                
-<section class="banner" style="background-image:url('/images/about-banner.png')">
+                <section class="banner" style="background-image:url('/images/about-banner.png')">
                     <h1>CONTACTO</h1>
                 </section>
 
