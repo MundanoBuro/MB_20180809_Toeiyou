@@ -57,7 +57,9 @@ $state = ['current' => $current];
                 <section class="slider">
                     @include('components.slider',$state) 
                 </section>
-                <section id="about-mission-vision">
+               
+                <div class="sections">
+                <section id="about-mission-vision" >
                         @include('components.about.mission-and-vision') 
                 </section>
                 <section id="about-history">
@@ -66,6 +68,7 @@ $state = ['current' => $current];
                 <section id="about-our-people">
                         @include('components.about.our-people') 
                 </section>
+                </div>
                 
             </main>
              @include('components.footer') 

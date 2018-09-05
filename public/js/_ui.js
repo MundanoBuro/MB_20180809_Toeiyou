@@ -72,14 +72,15 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["openCard"] = openCard;
 function openCard(id) {
-
-    //Order
-
-    // Scroll to Card
-
-    $('html,body').animate({
-        scrollTop: $(id).offset().top - 60
-    }, 1500, function () {});
+  // Scroll to Card
+  $("html,body").animate({
+    scrollTop: $(id).offset().top - 60
+  }, 500, function () {
+    $(id).addClass("open");
+    setTimeout(function () {
+      $(id + " .card .col").fadeIn().css("display", "inline-block");
+    }, 2000);
+  });
 }
 
 /***/ }),

@@ -8,6 +8,7 @@
             <li class ="nav-link">
                 <a href="/about">
                 <div class="nav-link-title">
+                    <img src="images/gi-header-div.png">
                     <span>NOSOTROS</span>
                 </div>
                 </a>
@@ -19,7 +20,7 @@
             </li>
             <li class ="nav-link">
                 <a href="/business">
-                <div class="nav-link-title">LÍNEAS DE NEGOCIOS</div>
+                <div class="nav-link-title"><img src="images/gi-header-div.png"><span>LÍNEAS DE NEGOCIOS</span></div>
                 </a>
                 <div class="nav-link-menu">
                     <a class="nav-link-menu-item" href="/business#deliz">DELIZ</a>
@@ -29,18 +30,18 @@
             </li>
             <li class ="nav-link">
                 <a href="/industry">
-                <div class="nav-link-title">INFORMACIÓN DEL SECTOR</div> </a>
+                <div class="nav-link-title"><img src="images/gi-header-div.png"><span>INFORMACIÓN DEL SECTOR</span></div> </a>
                
             </li>
             
             <li class ="nav-link">
-                <a class="nav-link-title" href="/clients">CLIENTES</a>
+                <a class="nav-link-title" href="/clients"><img src="images/gi-header-div.png"><span>CLIENTES</span></a>
             </li>
             <li class ="nav-link">
-                <a class="nav-link-title" href="/news">NOTICIAS</a>
+                <a class="nav-link-title" href="/news"><img src="images/gi-header-div.png"><span>NOTICIAS</span></a>
             </li>
             <li class ="nav-link">
-                <a class="nav-link-title" href="/contact">CONTACTO</a>
+                <a class="nav-link-title" href="/contact"><img src="images/gi-header-div.png"><span>CONTACTO</span></a>
             </li>
 
         </ul>

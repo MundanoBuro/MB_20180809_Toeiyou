@@ -32,6 +32,7 @@ $state = ['current' => $current];
         <script src="lib/swiper.min.js"></script> 
         <script src="js/app.js"></script> 
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 
     </head>
     {{-------------------------------------------------}}
@@ -48,15 +49,25 @@ $state = ['current' => $current];
         </div>
 
         <div class="loaded" >
-            @include('components.header',$state)
-            <main class="clients">
-<section class="slider">
-               @include('components.slider') 
-            </section>
-            <section>
-                 <img class="client-logos" src="images/clients-content.png">
-            </section>
 
+            @include('components.header',$state)
+
+            <main class="clients">
+
+                <section class="slider">
+                @include('components.slider') 
+                </section>
+
+                <section class="clients-logos">
+                    <div class="wrapper">                  <img class="client-logo" src="images/clients/client1.png" style="display:none;">
+                    <img class="client-logo" src="images/clients/client2.png" style="display:none;">
+                    <img class="client-logo" src="images/clients/client3.png" style="display:none;">
+                    <img class="client-logo" src="images/clients/client4.png" style="display:none;">
+                    <img class="client-logo" src="images/clients/client5.png" style="display:none;">
+                    <img class="client-logo" src="images/clients/client6.png" style="display:none;">
+                    <img class="client-logo" src="images/clients/client7.png" style="display:none;">
+                </div>
+                </section>
 
             </main>
              @include('components.footer') 
@@ -64,6 +75,16 @@ $state = ['current' => $current];
 
 
         <script src="js/main.js"></script> 
+        <script>
+            $(document).ready(function(){
+                setTimeout(function(){ $($(".client-logo")[0]).fadeIn(750)},500);
+                setTimeout(function(){ $($(".client-logo")[1]).fadeIn(750)},1000);
+                setTimeout(function(){ $($(".client-logo")[2]).fadeIn(750)},1500);
+                setTimeout(function(){ $($(".client-logo")[3]).fadeIn(750)},2000);
+                setTimeout(function(){ $($(".client-logo")[4]).fadeIn(750)},2500);
+                setTimeout(function(){ $($(".client-logo")[6]).fadeIn(750)},3000);
+            });
+        </script>
         
     </body>
     {{-------------------------------------------------}}

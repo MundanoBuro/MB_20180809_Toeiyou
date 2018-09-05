@@ -31,9 +31,10 @@ $state = ['current' => $current];
         <link rel="stylesheet" href="css/main.css">
         <script src="lib/swiper.min.js"></script> 
         <script src="js/app.js"></script> 
-           <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js" type="application/javascript"></script>
 
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
 
     </head>
     {{-------------------------------------------------}}
@@ -59,14 +60,33 @@ $state = ['current' => $current];
             </section>
 
             <section>
+            <style>
+            .ct-perfect-fourth {
+            display: block;
+            position: relative;
+            height:400px;
+            width: 400px;
+            }    
+            </style>
+
             <div class="row yellow">
                 <div class="row-header" style="width: 100%;display:block;"> TAMAÑO DEL MERCADO</div>
                 <div class="row-content">
-<canvas id="bar-chart" width="800" height="450"></canvas>
+                  <canvas id="myChart" width="400" height="400"></canvas>
+                 </div>
+           </div>
+
+            <div style="width: 50%">
+                <canvas id="canvas" height="450" width="600"></canvas>
+                <div class="container">
+                <div class="chart-container">
+                <canvas id="chart-legend-normal"></canvas>
+                </div>
+                <div class="chart-container">
+                <canvas id="chart-legend-pointstyle"></canvas>
+                </div>
                 </div>
             </div>
-
-            
 
             </section>
 
@@ -76,48 +96,63 @@ $state = ['current' => $current];
 
 
         <script src="js/main.js"></script> 
+<script>
+        var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
 
-        <script>
-var ctx = document.getElementById("bar-chart").getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
-            }]
+        var barChartData = {
+        labels : ["2012","2013","2014","2015","2016","2017"],
+        datasets : [
+          {
+            fillColor : "rgba(220,220,220,0.0)",
+            strokeColor : "#A2BB3C",
+            highlightFill: "rgba(220,220,220,0.75)",
+            highlightStroke: "rgba(220,220,220,1)",
+            data : [59.085,60.855,62.323,64.107,66.316,67.867],
+            backgroundColor: "#fff",
+						borderColor: "#ffaabb",
+						borderWidth: 1,
+						pointStyle: 'rectRot',
+						pointRadius: 5,
+						pointBorderColor: 'rgb(0, 0, 0)'
+            },
+            {
+            fillColor : "rgba(151,187,205,0.0)",
+            strokeColor : "#9D1728",
+            highlightFill : "rgba(151,187,205,0.75)",
+            highlightStroke : "rgba(151,187,205,1)",
+            data : [33.657,35.213,36.124,36.525,36.011,35.065]
+            }
+          ],
+          options: {
+            title: {
+              display: true,
+              text: 'UNITS AND VALUES SELLS IN CONSUMER FOODSERVICE 2012-2017'
+            },
+            animation: {
+              duration: 2000,
+              onProgress: function(animation) {
+                progress.value = animation.currentStep / animation.numSteps;
+              },
+              onComplete: function() {
+                window.setTimeout(function() {
+                  progress.value = 0;
+                }, 2000);
+              }
+            }
+          }
         }
-    }
-});
+     
+        window.onload = function(){
 
+          var ctx = document.getElementById("canvas").getContext("2d"); 
+          
+          
+          window.myBar = new Chart(ctx).Line(barChartData);
+          console.log(window.myBar);
+    }
         </script>
         
+ 
     </body>
     {{-------------------------------------------------}}
 

@@ -88,14 +88,15 @@ function preloading() {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["openCard"] = openCard;
 function openCard(id) {
-
-    //Order
-
-    // Scroll to Card
-
-    $('html,body').animate({
-        scrollTop: $(id).offset().top - 60
-    }, 1500, function () {});
+  // Scroll to Card
+  $("html,body").animate({
+    scrollTop: $(id).offset().top - 60
+  }, 500, function () {
+    $(id).addClass("open");
+    setTimeout(function () {
+      $(id + " .card .col").fadeIn().css("display", "inline-block");
+    }, 2000);
+  });
 }
 
 /***/ }),
@@ -141,9 +142,14 @@ $(document).ready(function () {
     on: {
       init: function init() {
         console.log("swiper initialized");
+
         setTimeout(function () {
           myswiper.update(true);
         }, 250);
+
+        setInterval(function () {
+          myswiper.slideNext();
+        }, 10000);
       }
     }
   });
@@ -151,16 +157,14 @@ $(document).ready(function () {
   var href = location.href;
   var href_index = href.indexOf("#") + 1;
   var anchor = href.substring(href_index);
-  var targets = href.split('#');
+  var targets = href.split("#");
   var target_page_raw = targets[0].split("/");
   var target_page = target_page_raw[3];
   var target_section = targets[1];
 
-  console.log(target_page);
-
   setTimeout(function () {
     Object(__WEBPACK_IMPORTED_MODULE_1__ui_js__["openCard"])("#" + target_page + "-" + target_section);
-  }, 1000);
+  }, 1500);
 });
 
 /***/ }),

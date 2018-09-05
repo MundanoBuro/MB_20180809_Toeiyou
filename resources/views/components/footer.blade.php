@@ -30,7 +30,7 @@
     </div>
      <div class="row social">
 
-        <ul class="social-icons">
+        <ul class="social-icons" style="display:none">
             <li class="icon facebook"><i class="fab fa-facebook-f"></i>
 
 </li>
