@@ -60,38 +60,29 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */,
-/* 1 */,
-/* 2 */
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(3);
-__webpack_require__(4);
-module.exports = __webpack_require__(5);
+(function webpackMissingModule() { throw new Error("Cannot find module \"C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\resources\\scripts\\main.js\""); }());
+__webpack_require__(1);
+module.exports = __webpack_require__(2);
 
 
 /***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__) {
-
-"use strict";
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\resources\\scripts\\main.js'");
-
-/***/ }),
-/* 4 */
+/* 1 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 5 */
+/* 2 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\resources\\assets\\sass\\app.scss'\n    at runLoaders (C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\node_modules\\webpack\\lib\\NormalModule.js:195:19)\n    at C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\node_modules\\loader-runner\\lib\\LoaderRunner.js:200:19\n    at C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:70:14\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)\n    at process._tickCallback (internal/process/next_tick.js:180:9)");
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
