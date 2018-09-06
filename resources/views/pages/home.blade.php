@@ -43,6 +43,8 @@ $state = ['current' => $current];
 
             <main>
 
+                <h1>GASTRO INNOVA</h1>
+
             </main>
             
             <footer>
@@ -52,7 +54,7 @@ $state = ['current' => $current];
         </div>
 
 
-        <script src="js/main.js"></script> 
+        
         
     </body>
     {{-------------------------------------------------}}
