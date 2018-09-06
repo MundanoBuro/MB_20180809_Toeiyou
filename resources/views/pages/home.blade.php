@@ -40,7 +40,7 @@ $state = ['current' => $current];
             <header>
 
             </header>
-
+  
             <main>
 
                 <h1>GASTRO INNOVA</h1>
