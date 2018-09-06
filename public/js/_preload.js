@@ -66,20 +66,10 @@
 /******/ ({
 
 /***/ 0:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, __webpack_exports__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["preloading"] = preloading;
-function preloading() {
-  setTimeout(function () {
-    var preload = document.getElementsByClassName("preload")[0];
-    var loaded = document.getElementsByClassName("loaded")[0];
-
-    preload.style.display = "none";
-    loaded.style.display = "inherit";
-  }, 0);
-}
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\resources\\scripts\\_preload.js'");
 
 /***/ }),
 

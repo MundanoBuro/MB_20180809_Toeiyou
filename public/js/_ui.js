@@ -66,22 +66,10 @@
 /******/ ({
 
 /***/ 1:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, __webpack_exports__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["openCard"] = openCard;
-function openCard(id) {
-  // Scroll to Card
-  $("html,body").animate({
-    scrollTop: $(id).offset().top - 60
-  }, 500, function () {
-    $(id).addClass("open");
-    setTimeout(function () {
-      $(id + " .card .col").fadeIn().css("display", "inline-block");
-    }, 2000);
-  });
-}
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\resources\\scripts\\_ui.js'");
 
 /***/ }),
 

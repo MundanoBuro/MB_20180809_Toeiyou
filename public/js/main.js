@@ -64,42 +64,8 @@
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["preloading"] = preloading;
-function preloading() {
-  setTimeout(function () {
-    var preload = document.getElementsByClassName("preload")[0];
-    var loaded = document.getElementsByClassName("loaded")[0];
-
-    preload.style.display = "none";
-    loaded.style.display = "inherit";
-  }, 0);
-}
-
-/***/ }),
-/* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["openCard"] = openCard;
-function openCard(id) {
-  // Scroll to Card
-  $("html,body").animate({
-    scrollTop: $(id).offset().top - 60
-  }, 500, function () {
-    $(id).addClass("open");
-    setTimeout(function () {
-      $(id + " .card .col").fadeIn().css("display", "inline-block");
-    }, 2000);
-  });
-}
-
-/***/ }),
+/* 0 */,
+/* 1 */,
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -110,62 +76,10 @@ module.exports = __webpack_require__(5);
 
 /***/ }),
 /* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, __webpack_exports__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__preload_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ui_js__ = __webpack_require__(1);
-// --------------------------------- //
-
-
-var myswiper;
-
-// --------------------------------- //
-// -- OnLoad ----------------------- //
-// --------------------------------- //
-$(document).ready(function () {
-  Object(__WEBPACK_IMPORTED_MODULE_0__preload_js__["preloading"])();
-  var myswiper = new Swiper(".swiper-container", {
-    parallax: true,
-    autoplay: 0,
-    direction: "horizontal",
-    loop: "true",
-    speed: 1000,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    pagination: {
-      el: ".swiper-pagination"
-    },
-    on: {
-      init: function init() {
-        console.log("swiper initialized");
-
-        setTimeout(function () {
-          myswiper.update(true);
-        }, 250);
-
-        setInterval(function () {
-          myswiper.slideNext();
-        }, 10000);
-      }
-    }
-  });
-
-  var href = location.href;
-  var href_index = href.indexOf("#") + 1;
-  var anchor = href.substring(href_index);
-  var targets = href.split("#");
-  var target_page_raw = targets[0].split("/");
-  var target_page = target_page_raw[3];
-  var target_section = targets[1];
-
-  setTimeout(function () {
-    Object(__WEBPACK_IMPORTED_MODULE_1__ui_js__["openCard"])("#" + target_page + "-" + target_section);
-  }, 1500);
-});
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\resources\\scripts\\main.js'");
 
 /***/ }),
 /* 4 */
@@ -177,7 +91,7 @@ $(document).ready(function () {
 /* 5 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\resources\\assets\\sass\\app.scss'\n    at runLoaders (C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\node_modules\\webpack\\lib\\NormalModule.js:195:19)\n    at C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\node_modules\\loader-runner\\lib\\LoaderRunner.js:200:19\n    at C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:70:14\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)\n    at process._tickCallback (internal/process/next_tick.js:180:9)");
 
 /***/ })
 /******/ ]);
