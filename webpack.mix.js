@@ -40,6 +40,7 @@ mix.webpackConfig({
     })
   ]
 });
+mix.disableSuccessNotifications();
 /* ------------------------------------------------------- */
 
 
@@ -52,6 +53,18 @@ mix.webpackConfig({
 mix.copy("resources/images", "public/images", false);
 /* ------------------------------------------------------- */
 
+
+
+
+
+
+
+/* ------------------------------------------------------- */
+/* --- Bundling,Compiling and Minifying CSS -------------- */
+/* ------------------------------------------------------- */
+mix.less("resources/styles/config.less", "public/css", false);
+mix.minify("public/css/config.css");
+/* ------------------------------------------------------- */
 
 
 
