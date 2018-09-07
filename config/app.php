@@ -151,6 +151,8 @@ return [
          * Package Service Providers...
          */
 
+        Fitztrev\LaravelHtmlMinify\LaravelHtmlMinifyServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -161,7 +163,6 @@ return [
         App\Providers\RouteServiceProvider::class,
 
 
-        Fitztrev\LaravelHtmlMinify\LaravelHtmlMinifyServiceProvider::class,
 
     ],
 
