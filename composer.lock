@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb1de71bdccddc591cbb644893eb244d",
+    "content-hash": "c70cea4db24f51e430574ae6ef5e1073",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1339,6 +1339,47 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
+        },
+        {
+            "name": "riseno/laravel-minify-response",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/risenohk/laravel-minify-response.git",
+                "reference": "cd38198fabb8db09d8a1696cc2f3354a9ecb2b3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/risenohk/laravel-minify-response/zipball/cd38198fabb8db09d8a1696cc2f3354a9ecb2b3a",
+                "reference": "cd38198fabb8db09d8a1696cc2f3354a9ecb2b3a",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Riseno\\MinifyResponse\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Chan",
+                    "email": "rc@riseno.com"
+                }
+            ],
+            "description": "Minify html response",
+            "keywords": [
+                "laravel",
+                "middleware",
+                "minify",
+                "output",
+                "response",
+                "riseno"
+            ],
+            "time": "2016-05-19T03:02:00+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
