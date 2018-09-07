@@ -151,7 +151,7 @@ return [
          * Package Service Providers...
          */
 
-        Fitztrev\LaravelHtmlMinify\LaravelHtmlMinifyServiceProvider,
+        //Fitztrev\LaravelHtmlMinify\LaravelHtmlMinifyServiceProvider,
 
         /*
          * Application Service Providers...
