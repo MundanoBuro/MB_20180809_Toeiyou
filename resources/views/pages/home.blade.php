@@ -35,13 +35,21 @@ $state = ['current' => $current];
     {{-- HTML::Body                                  --}}
     {{-------------------------------------------------}}
     <body id="app">
-    <header>
-    </header>
-    <main>
-        <h1>GASTRO INNOVA</h1>
-    </main>
-    <footer>
-    </footer>        
+
+        <!-- ---- HEADER ---- -->
+        <header>
+            @include('components.header')
+        </header>
+
+        <!-- ---- MAIN ------ -->
+        <main>
+            
+        </main>
+        
+        <!-- ---- FOOTER ---- -->
+        <footer>
+            @include('components.footer')
+        </footer>        
     </body>
     {{-------------------------------------------------}}
 
