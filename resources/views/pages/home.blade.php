@@ -26,7 +26,6 @@ $state = ['current' => $current];
     <head>
         @include('settings.metas', $metaTags)
         @include('settings.assets', $metaTags)
-
     </head>
     {{-------------------------------------------------}}
 
@@ -36,26 +35,13 @@ $state = ['current' => $current];
     {{-- HTML::Body                                  --}}
     {{-------------------------------------------------}}
     <body id="app">
-
-            <header>
-
-            </header>
-  
-            <main>
-
-                <h1>GASTRO INNOVA</h1>
-
-            </main>
-            
-            <footer>
-                
-            </footer>
-             
-        </div>
-
-
-        
-        
+    <header>
+    </header>
+    <main>
+        <h1>GASTRO INNOVA</h1>
+    </main>
+    <footer>
+    </footer>        
     </body>
     {{-------------------------------------------------}}
 
