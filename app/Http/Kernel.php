@@ -26,7 +26,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\VerifyCsrfToken::class,
         \Riseno\MinifyResponse\MinifyResponseMiddleware::class,
     ];
-
+  
     /**
      * The application's route middleware groups.
      *
