@@ -153,7 +153,7 @@ return [
          */
 
         //Fitztrev\LaravelHtmlMinify\LaravelHtmlMinifyServiceProvider,
-        HTMLMin\HTMLMin\Facades\HTMLMin::class,
+        HTMLMin\HTMLMin\HTMLMinServiceProvider::class,
 
         
         /*
