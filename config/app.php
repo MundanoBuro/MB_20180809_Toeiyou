@@ -161,7 +161,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
 
-        Fitztrev\LaravelHtmlMinify\LaravelHtmlMinifyServiceProvider::class
+        Fitztrev\LaravelHtmlMinify\LaravelHtmlMinifyServiceProvider::class,
 
     ],
 
