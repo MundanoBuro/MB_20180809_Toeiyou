@@ -24,11 +24,10 @@ $state = ['current' => $current];
     {{-- HTML::Head                                  --}}
     {{-------------------------------------------------}}  
     <head>
-        @include('settings.metas', $metaTags)
-        @include('settings.assets', $metaTags)
+            @include('settings.metas', $metaTags)
+            @include('settings.assets', $metaTags)
     </head>
     {{-------------------------------------------------}}
-
 
 
     {{-------------------------------------------------}}
@@ -36,6 +35,7 @@ $state = ['current' => $current];
     {{-------------------------------------------------}}
     <body id="app">
 
+        
         <!-- ---- HEADER ---- -->
         <header>
             @include('components.header')
@@ -52,6 +52,7 @@ $state = ['current' => $current];
         </footer>        
     </body>
     {{-------------------------------------------------}}
+
 
 </html>
 {{-----------------------------------------------------}}  
