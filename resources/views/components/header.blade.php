@@ -12,7 +12,7 @@
                 <div class="item-header">
                     <div class="wrapper">
                         <img src="images/header/gi-header-div.png">
-                        NOSOTROS
+                        <span>NOSOTROS</span>
                     </div>
                 </div>
                 <div class="item-content" >
@@ -35,7 +35,13 @@
                 v-on:mouseleave=" UI.MENU.BUSINESS.uClass = 'default' "
                 v-bind:class="UI.MENU.BUSINESS.uClass">
                 <div class="wrapper">
-                    <div class="item-header">LINEAS DE NEGOCIO</div>
+                    <div class="item-header">LINEAS DE NEGOCIO
+<div class="wrapper">
+                        <img src="images/header/gi-header-div.png">
+                        <span>NOSOTROS</span>
+                    </div>
+
+                    </div>
                     <div class="item-content">
                         <div class="sub-item">
                             DELIZ
@@ -55,7 +61,13 @@
                v-on:mouseleave=" UI.MENU.INDUSTRY.uClass = 'default' "
                v-bind:class="UI.MENU.INDUSTRY.uClass">
                     <div class="wrapper">
-                    <div class="item-header">INFORMACIÓN FINANCIERA</div>
+                    <div class="item-header">INFORMACIÓN FINANCIERA
+
+                        <div class="wrapper">
+                        <img src="images/header/gi-header-div.png">
+                        <span>NOSOTROS</span>
+                    </div>
+                    </div>
                     <div class="item-content">
                         <div class="sub-item">
                             TAMAÑO DEL MERCADO
@@ -76,7 +88,13 @@
                 v-bind:class="UI.MENU.CLIENTS.uClass">
 
                          <div class="wrapper">
-                    <div class="item-header">CLIENTES</div>
+                    <div class="item-header">CLIENTES
+<div class="wrapper">
+                        <img src="images/header/gi-header-div.png">
+                        <span>NOSOTROS</span>
+                    </div>
+
+                    </div>
                 </div>
             </li>
 
@@ -86,7 +104,13 @@
                 v-bind:class="UI.MENU.CONTACT.uClass">
 
                 <div class="wrapper">
-                    <div class="item-header">CONTACTO</div>
+                    <div class="item-header">CONTACTO
+<div class="wrapper">
+                        <img src="images/header/gi-header-div.png">
+                        <span>NOSOTROS</span>
+                    </div>
+
+                    </div>
                 </div>
             </li>
 
