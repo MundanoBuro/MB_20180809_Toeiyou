@@ -48,7 +48,7 @@ $state = ['current' => $current];
 
         <!-- ---- MAIN ------ -->
         <main v-bind:class="UI.LOADER.class">
-           
+           @include('components.slider')
         </main>
         
         <!-- ---- FOOTER ---- -->

@@ -281,12 +281,13 @@ header .menu .item .item-content .sub-item {
   background-color: white;
   color: black;
   width: 100%;
+  max-width: 10em;
 }
 header .menu .item .item-content .sub-item:first-child {
   border-top: 1px solid green;
 }
 header .menu .item .item-content .sub-item:hover {
-  background-color: green;
+  background-color: orange;
   color: white;
 }
 header .menu .item.default .item-content {
@@ -316,7 +317,7 @@ header .menu .item.default .item-content {
   transition: all 300ms ease-in-out;
 }
 header .menu .item.hover .item-content {
-  height: 220%;
+  height: 250%;
   display: -ms-flexbox;
   display: -ms-flex;
   display: -webkit-box;
@@ -327,10 +328,10 @@ header .menu .item.hover .item-content {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  -ms-justify-content: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-align-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -341,11 +342,6 @@ header .menu .item.hover .item-content {
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-/*
-  .flex-display(flex);
-  .flex-direction(column);
-  .flex-wrap(nowrap);
-  .justify-content(center);
-  .align-content(center);
-  .align-items(center);
-  */
+header .menu .item.hover:nth-child(3) .item-content {
+  height: 300%;
+}
