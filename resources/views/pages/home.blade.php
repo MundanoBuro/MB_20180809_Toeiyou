@@ -25,7 +25,7 @@ $state = ['current' => $current];
     {{-------------------------------------------------}}  
     <head>
             @include('settings.metas', $metaTags)
-            @include('settings.assets', $metaTags)
+            @include('settings.assets_header', $metaTags)
     </head>
     {{-------------------------------------------------}}
 
@@ -33,23 +33,31 @@ $state = ['current' => $current];
     {{-------------------------------------------------}}
     {{-- HTML::Body                                  --}}
     {{-------------------------------------------------}}
-    <body id="app">
+    <body>
+        <div class="v-app" id="app">
 
+        <!-- ---- LOADER ---- -->
+        <div class="loader dis-col-mid" v-if="UI.LOADER.state" v-bind:class="UI.LOADER.class">
+            <img src="images/loader/loader.gif">
+        </div>
         
         <!-- ---- HEADER ---- -->
-        <header>
-            @include('components.header')
+        <header v-bind:class="UI.LOADER.class">
+             @include('components.header') 
         </header>
 
         <!-- ---- MAIN ------ -->
-        <main>
-            
+        <main v-bind:class="UI.LOADER.class">
+           
         </main>
         
         <!-- ---- FOOTER ---- -->
-        <footer>
+        <footer v-bind:class="UI.LOADER.class">
             @include('components.footer')
-        </footer>        
+        </footer>     
+
+    </div>
+     @include('settings.assets_footer')
     </body>
     {{-------------------------------------------------}}
 

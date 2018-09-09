@@ -1,4 +1,15 @@
 {
+    "/js/vApp.js": "/js/vApp.js",
     "/css/config.css": "/css/config.css",
-    "/css/config.min.css": "/css/config.min.css"
+    "/css/layout.css": "/css/layout.css",
+    "/css/views.css": "/css/views.css",
+    "/css/animations.css": "/css/animations.css",
+    "/css/components.css": "/css/components.css",
+    "/css/config.min.css": "/css/config.min.css",
+    "/css/layout.min.css": "/css/layout.min.css",
+    "/css/theme.min.css": "/css/theme.min.css",
+    "/css/views.min.css": "/css/views.min.css",
+    "/css/animations.min.css": "/css/animations.min.css",
+    "/css/components.min.css": "/css/components.min.css",
+    "/css/theme.css": "/css/theme.css"
 }

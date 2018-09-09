@@ -6,11 +6,31 @@
 // --
 // ---------------------------------------------------------------------- //
 
-
 // ----------------------------------------------------- //
 @import "./config/_reset.less";
 @import "./config/_mixins.less";
+@import "./config/_loader.less";
 // ----------------------------------------------------- //
 
+header,
+main,
+footer {
+  display: block;
+  min-width: 100vw;
+  margin-bottom: 5pt;
+}
 
-
+header {
+  position: fixed;
+  min-height: 50pt;
+  top:-100pt;
+}
+main {
+  margin-top: 55pt;
+  background-color: darkslategray;
+  min-height: 150pt;
+}
+footer {
+  background-color: burlywood;
+  min-height: 50pt;
+}

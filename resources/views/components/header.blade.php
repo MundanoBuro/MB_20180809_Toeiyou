@@ -1,54 +1,95 @@
-<header class="navbar">
-    <div class="wrapper">
-        <a href="/">
-        <img class="nav-logo" src="ico/gi-logo.png">
-        </a>
-        <ul class="nav-links">
 
-            <li class ="nav-link">
-                <a href="/about">
-                <div class="nav-link-title">
-                    <img src="images/gi-header-div.png">
-                    <span>NOSOTROS</span>
+    <div class="wrapper">
+        <img class="logo" src="images/header/gi-header-logo.png">
+        <ul class="menu">
+
+            <li class="item" 
+                   v-on:mouseover="UI.MENU.ABOUT.uClass = 'hover' "
+                v-on:mouseleave=" UI.MENU.ABOUT.uClass = 'default' "
+                v-bind:class="UI.MENU.ABOUT.uClass">
+
+                <div class="wrapper">
+                <div class="item-header">
+                    <div class="wrapper">
+                        <img src="images/header/gi-header-div.png">
+                        NOSOTROS
+                    </div>
                 </div>
-                </a>
-                <div class="nav-link-menu">
-                    <a class="nav-link-menu-item" href="/about#mission-vision">MISIÓN y VISIÓN</a>
-                    <a class="nav-link-menu-item" href="/about#history">HISTORIA</a>
-                    <a class="nav-link-menu-item" href="/about#our-people">NUESTRA GENTE</a>
+                <div class="item-content" >
+                    <div class="sub-item">
+                        MISIÓN Y VISIÓN
+                    </div>
+                    <div class="sub-item">
+                            HISTORIA
+                    </div>
+                    <div class="sub-item">
+                            NUESTRA GENTE
+                    </div>
+                </div>
+                </div>
+                
+            </li>
+
+            <li class="item" 
+                v-on:mouseover="UI.MENU.BUSINESS.uClass = 'hover' "
+                v-on:mouseleave=" UI.MENU.BUSINESS.uClass = 'default' "
+                v-bind:class="UI.MENU.BUSINESS.uClass">
+                <div class="wrapper">
+                    <div class="item-header">LINEAS DE NEGOCIO</div>
+                    <div class="item-content">
+                        <div class="sub-item">
+                            DELIZ
+                        </div>
+                        <div class="sub-item">
+                            READY MEALS
+                        </div>
+                        <div class="sub-item">
+                            START-UPS GASTRONÓMICAS
+                        </div>
+                    </div>
                 </div>
             </li>
-            <li class ="nav-link">
-                <a href="/business">
-                <div class="nav-link-title"><img src="images/gi-header-div.png"><span>LÍNEAS DE NEGOCIOS</span></div>
-                </a>
-                <div class="nav-link-menu">
-                    <a class="nav-link-menu-item" href="/business#deliz">DELIZ</a>
-                    <a class="nav-link-menu-item" href="/business#ready-meals">READY MEALS</a>
-                    <a class="nav-link-menu-item" href="/business#start-ups">START  UPS <br>GASTRONOMICAS</a>
+
+            <li class="item" 
+                v-on:mouseover="UI.MENU.INDUSTRY.uClass = 'hover' "
+               v-on:mouseleave=" UI.MENU.INDUSTRY.uClass = 'default' "
+               v-bind:class="UI.MENU.INDUSTRY.uClass">
+                    <div class="wrapper">
+                    <div class="item-header">INFORMACIÓN FINANCIERA</div>
+                    <div class="item-content">
+                        <div class="sub-item">
+                            TAMAÑO DEL MERCADO
+                        </div>
+                        <div class="sub-item">
+                            EVOLUCIÓN DEL MERCADO
+                        </div>
+                        <div class="sub-item">
+                            PROYECCIONES DEL MERCADO
+                        </div>
+                    </div>
+                    </div>
+            </li>
+
+            <li class="item" 
+                v-on:mouseover="UI.MENU.CLIENTS.uClass = 'hover' "
+                v-on:mouseleaver="UI.MENU.CLIENTS.uClass = 'default' "
+                v-bind:class="UI.MENU.CLIENTS.uClass">
+
+                         <div class="wrapper">
+                    <div class="item-header">CLIENTES</div>
                 </div>
             </li>
-            <li class ="nav-link">
-                <a href="/industry">
-                <div class="nav-link-title"><img src="images/gi-header-div.png"><span>INFORMACIÓN DEL SECTOR</span></div> </a>
-               
+
+            <li class="item" 
+               v-on:mouseover="UI.MENU.CONTACT.uClass = 'hover' "
+                v-on:mouseleave="UI.MENU.CONTACT.uClass = 'default' "
+                v-bind:class="UI.MENU.CONTACT.uClass">
+
+                <div class="wrapper">
+                    <div class="item-header">CONTACTO</div>
+                </div>
             </li>
-            
-            <li class ="nav-link">
-                <a class="nav-link-title" href="/clients"><img src="images/gi-header-div.png"><span>CLIENTES</span></a>
-            </li>
-            <li class ="nav-link">
-                <a class="nav-link-title" href="/news"><img src="images/gi-header-div.png"><span>NOTICIAS</span></a>
-            </li>
-            <li class ="nav-link">
-                <a class="nav-link-title" href="/contact"><img src="images/gi-header-div.png"><span>CONTACTO</span></a>
-            </li>
+
 
         </ul>
     </div>
-</header>
-
-<style>
-
-
-</style>

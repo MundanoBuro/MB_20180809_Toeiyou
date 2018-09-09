@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.googleapis.com/css?family=Raleway:300, 500, 700");
+  font-display: block;
+}
+.card.c-yellow .nav {
+  background-color: #FFB90F;
+}
+.card.c-yellow .nav h2 {
+  background-color: #FFB90F;
+}
+.card.c-yellow .content {
+  border-top: 5px solid #FFB90F;
+}
+.card.c-green .nav {
+  background-color: #00822F;
+  border-top: 5px solid #00822F;
+}
+.about .sections section .card {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2em;
+  height: 33%;
+  -webkit-transition: all 2000ms ease-in-out;
+  transition: all 2000ms ease-in-out;
+}
+.about .sections section .card .nav {
+  height: 200px;
+  display: inline-block;
+  -webkit-transition: height 2000ms ease-in-out;
+  transition: height 2000ms ease-in-out;
+}
+.about .sections section .card .nav h2 {
+  padding: 1em;
+  font-family: "font-light";
+}
+.about .sections section .card .content {
+  display: inline-block;
+  width: 0px;
+  float: right;
+  -webkit-transition: all 2000ms ease-in-out;
+  transition: all 2000ms ease-in-out;
+}
+.about .sections section .card .content .col {
+  display: none;
+  vertical-align: top;
+  -webkit-transition: all 2000ms ease-in-out;
+  transition: all 2000ms ease-in-out;
+}
+.about .sections section .card .nav h2 {
+  width: 100%;
+}
+.about .sections section .card .nav .cover {
+  height: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: height 2000ms ease-in-out;
+  transition: height 2000ms ease-in-out;
+}
+.about .sections section.open {
+  width: 100%;
+}
+.about .sections section.open .card .nav {
+  width: calc(25% - 1em);
+  height: 35em;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  -webkit-transition: all 2000ms ease-in-out;
+  transition: all 2000ms ease-in-out;
+}
+.about .sections section.open .card .content {
+  display: inline-block;
+  width: calc(75% - 1em);
+  -webkit-transition: all 2000ms ease-in-out;
+  transition: all 2000ms ease-in-out;
+}
+.about .sections section.open .card .content .col {
+  width: 45%;
+}
+.about .sections section.open .card .content .photos {
+  width: 20%;
+}
+.about .sections section.open .card .content .photos img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  padding: 1em;
+  padding-left: 0em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.about .sections section.open .card .nav .cover {
+  position: relative;
+  left: -2000px;
+}
+.about .sections section.open .card .nav h2 {
+  position: relative;
+  top: -23em;
+  font-size: 1.5em;
+  font-family: "font-black";
+  left: 1em;
+  color: white;
+}
+.card .info h3 {
+  font-family: "font-black";
+  font-size: 1.5em;
+  padding: 0.5em 0em;
+  color: #961934;
+}
+.card .info p {
+  font-family: "font-light";
+  line-height: 125%;
+  color: black;
+  font-size: 1em;
+}
+.c-yellow .nav {
+  background-color: #FFB90F;
+}
+.c-yellow .nav h2 {
+  background-color: #FFB90F;
+}
+.c-yellow .content {
+  border-top: 5px solid #FFB90F;
+}
+.c-green .nav {
+  background-color: #00822F;
+  border-top: 5px solid #00822F;
+}

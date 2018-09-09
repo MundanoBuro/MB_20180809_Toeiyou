@@ -1,0 +1,118 @@
+.loader {
+  .flex-display(flex);
+
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+
+  background-color: white;
+
+  top: 0px;
+  left: 0px;
+
+  z-index: 100;
+}
+
+.loader img {
+  display: block;
+  width: 25%;
+  max-width: 120px;
+  height: auto;
+  margin: 0 auto;
+
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.loader.default img{
+  width: 25%;
+}
+
+.loader.default{
+    opacity: 1;
+    -webkit-transition: all 1200ms ease-in-out;
+    -moz-transition: all 1200ms ease-in-out;
+    -ms-transition: all 1200ms ease-in-out;
+    -o-transition: all 1200ms ease-in-out;
+    transition: all 1200ms ease-in-out;
+}
+.loader.fadeOut{
+    opacity: 0;
+    -webkit-transition: all 1200ms ease-in-out;
+    -moz-transition: all 1200ms ease-in-out;
+    -ms-transition: all 1200ms ease-in-out;
+    -o-transition: all 1200ms ease-in-out;
+    transition: all 1200ms ease-in-out;
+}
+
+.loader.fadeOut img{
+  width: 0px;
+}
+
+header.default {
+   top : -100pt;
+
+  -webkit-transition: all 1200ms ease-in-out;
+  -moz-transition: all 1200ms ease-in-out;
+  -ms-transition: all 1200ms ease-in-out;
+  -o-transition: all 1200ms ease-in-out;
+  transition: all 1200ms ease-in-out;
+}
+header.fadeOut {
+  top: 0pt;
+
+  -webkit-transition: all 1200ms ease-in-out;
+  -moz-transition: all 1200ms ease-in-out;
+  -ms-transition: all 1200ms ease-in-out;
+  -o-transition: all 1200ms ease-in-out;
+  transition: all 1200ms ease-in-out;
+}
+
+
+
+
+main.default {
+    opacity: 0;
+ 
+   -webkit-transition: all 1200ms ease-in-out;
+   -moz-transition: all 1200ms ease-in-out;
+   -ms-transition: all 1200ms ease-in-out;
+   -o-transition: all 1200ms ease-in-out;
+   transition: all 1200ms ease-in-out;
+ }
+ main.fadeOut {
+   opacity: 1;
+
+   -webkit-transition: all 1200ms ease-in-out;
+   -moz-transition: all 1200ms ease-in-out;
+   -ms-transition: all 1200ms ease-in-out;
+   -o-transition: all 1200ms ease-in-out;
+   transition: all 1200ms ease-in-out;
+ }
+
+
+
+ 
+footer.default {
+    opacity: 0;
+ 
+   -webkit-transition: all 1200ms ease-in-out;
+   -moz-transition: all 1200ms ease-in-out;
+   -ms-transition: all 1200ms ease-in-out;
+   -o-transition: all 1200ms ease-in-out;
+   transition: all 1200ms ease-in-out;
+ }
+ footer.fadeOut {
+   opacity: 1;
+
+   -webkit-transition: all 1200ms ease-in-out;
+   -moz-transition: all 1200ms ease-in-out;
+   -ms-transition: all 1200ms ease-in-out;
+   -o-transition: all 1200ms ease-in-out;
+   transition: all 1200ms ease-in-out;
+ }
+
