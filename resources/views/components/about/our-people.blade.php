@@ -1,4 +1,4 @@
-<div class="card c-yellow">
+<div class="card c-yellow ourpeople">
         <div class="wrapper">
 
 
@@ -13,7 +13,7 @@
 
 
             <div class="row">
-                <img src="images/header/gi-header-logo.png">
+                <img class="logo"src="images/header/gi-header-logo.png">
             </div>
             <div class="row"></div>
             <div class="row"></div>

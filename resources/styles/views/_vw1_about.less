@@ -1,3 +1,5 @@
+@import "./../config/_mixins.less";
+
 main.about {
   display: block;
   margin: 0 auto;
@@ -5,5 +7,20 @@ main.about {
 
   img.banner {
     padding-top: 45pt;
+  }
+}
+
+.card.ourpeople {
+  .row {
+    .flex-display(flex);
+    .flex-direction(row);
+    .flex-wrap(nowrap);
+    .justify-content(center);
+    .align-content(center);
+    .align-items(center);
+    .logo {
+      width: 125pt;
+      padding: 25pt;
+    }
   }
 }
