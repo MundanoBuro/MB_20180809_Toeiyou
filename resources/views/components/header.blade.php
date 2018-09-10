@@ -4,28 +4,28 @@
         <ul class="menu">
 
             <li class="item" 
-                   v-on:mouseover="UI.MENU.ABOUT.uClass = 'hover' "
+                v-on:mouseover="UI.MENU.ABOUT.uClass = 'hover' "
                 v-on:mouseleave=" UI.MENU.ABOUT.uClass = 'default' "
                 v-bind:class="UI.MENU.ABOUT.uClass">
 
                 <div class="wrapper">
-                <div class="item-header">
-                    <div class="wrapper">
-                        <img src="images/header/gi-header-div.png">
-                        <span>NOSOTROS</span>
+                    <div class="item-header">
+                        <div class="wrapper">
+                            <img src="images/header/gi-header-div.png">
+                            <span>NOSOTROS</span>
+                        </div>
                     </div>
-                </div>
-                <div class="item-content" >
-                    <div class="sub-item">
-                        MISIÓN Y VISIÓN
+                    <div class="item-content" >
+                        <div class="sub-item">
+                            MISIÓN Y VISIÓN
+                        </div>
+                        <div class="sub-item">
+                                HISTORIA
+                        </div>
+                        <div class="sub-item">
+                                NUESTRA GENTE
+                        </div>
                     </div>
-                    <div class="sub-item">
-                            HISTORIA
-                    </div>
-                    <div class="sub-item">
-                            NUESTRA GENTE
-                    </div>
-                </div>
                 </div>
                 
             </li>
@@ -85,7 +85,7 @@
                 v-on:mouseleaver="UI.MENU.CLIENTS.uClass = 'default' "
                 v-bind:class="UI.MENU.CLIENTS.uClass">
 
-            <div class="wrapper">
+                <div class="wrapper">
                      <div class="item-header">
                         <div class="wrapper">
                             <img src="images/header/gi-header-div.png">
@@ -93,6 +93,7 @@
                         </div>
                     </div>
                 </div>
+
             </li>
 
             <li class="item" 
@@ -108,6 +109,7 @@
                         </div>
                     </div>
                 </div>
+
             </li>
 
 

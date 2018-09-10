@@ -80,24 +80,32 @@ module.exports = __webpack_require__(7);
 /* 1 */
 /***/ (function(module, exports) {
 
-VueScrollTo.setDefaults({
-  container: "body",
-  duration: 500,
-  easing: "ease",
-  offset: 0,
-  cancelable: true,
-  onStart: false,
-  onDone: false,
-  onCancel: false,
-  x: false,
-  y: true
-});
+Vue.use(VueAwesomeSwiper);
 
 var app = new Vue({
   el: "#app",
+  components: {
+    LocalSwiper: VueAwesomeSwiper.swiper,
+    LocalSlide: VueAwesomeSwiper.swiperSlide
+  },
   delimiters: ["[[", "]]"],
   data: {
     message: "Hello Vue!",
+    swiperOptionA: {
+      pagination: {
+        el: ".swiper-pagination"
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    },
+    swiperOptionB: {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true
+      }
+    },
     UI: {
       LOADER: {
         state: true,
@@ -132,11 +140,22 @@ var app = new Vue({
     },
     isLoading: true
   },
+  computed: {
+    swiperA: function swiperA() {
+      return this.$refs.awesomeSwiperA.swiper;
+    },
+    swiperB: function swiperB() {
+      return this.$refs.awesomeSwiperB.swiper;
+    }
+  },
   mounted: function mounted() {
     this.waitOnLoad();
   },
 
   methods: {
+    onSetTranslate: function onSetTranslate() {
+      console.log("onSetTranslate");
+    },
     waitOnLoad: function waitOnLoad() {
       var that = this;
       var url = location.href;

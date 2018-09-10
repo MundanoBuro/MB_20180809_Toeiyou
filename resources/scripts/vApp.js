@@ -1,21 +1,29 @@
-VueScrollTo.setDefaults({
-  container: "body",
-  duration: 500,
-  easing: "ease",
-  offset: 0,
-  cancelable: true,
-  onStart: false,
-  onDone: false,
-  onCancel: false,
-  x: false,
-  y: true
-});
+Vue.use(VueAwesomeSwiper);
 
 var app = new Vue({
   el: "#app",
+  components: {
+    LocalSwiper: VueAwesomeSwiper.swiper,
+    LocalSlide: VueAwesomeSwiper.swiperSlide
+  },
   delimiters: ["[[", "]]"],
   data: {
     message: "Hello Vue!",
+    swiperOptionA: {
+      pagination: {
+        el: ".swiper-pagination"
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    },
+    swiperOptionB: {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true
+      }
+    },
     UI: {
       LOADER: {
         state: true,
@@ -50,10 +58,21 @@ var app = new Vue({
     },
     isLoading: true
   },
+  computed: {
+    swiperA() {
+      return this.$refs.awesomeSwiperA.swiper;
+    },
+    swiperB() {
+      return this.$refs.awesomeSwiperB.swiper;
+    }
+  },
   mounted() {
     this.waitOnLoad();
   },
   methods: {
+    onSetTranslate() {
+      console.log("onSetTranslate");
+    },
     waitOnLoad() {
       var that = this;
       var url = location.href;

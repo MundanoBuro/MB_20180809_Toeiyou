@@ -1,39 +1,97 @@
-<div class="card c-yellow">
-    <div class="wrapper">
+<div class="card c-green">
+        <div class="wrapper">
+
+
 
         <div class="nav">
-            <img class="cover" src="images/about/mission-cover.jpg">
-            <h2>Misión y Visión</h2>
+            <img src="images/cards/gi-cards-div-y.png">
+            <h2>Historia</h2>
         </div>
 
-        <div class="content" style="display: none">
-            <div class="col photos">
-                <img class="about-photo" src="images/about/mission1.png">
-                <img class="about-photo" src="images/about/mission2.png">
-                <img class="about-photo" src="images/about/mission3.png">
+
+
+        <div class="content timeline">
+
+            <div class="row green time-item">
+                <div class="color-block">2015</div>
+                <div class="image">
+                    <img src="images/timeline/date1.png">
+                </div>
+                <div class="text">Gastroinnova SAS nace a finales de 2015 dedicada a la fabricación de comidas preparadas (Ready Meals) empacadas al vacío y pasteurizadas para conservar su frescura y sabor hasta por (90) días en refrigeración, utilizando tecnología MICVAC.</div>
             </div>
-            <div class="col ">
-                <h3>MISIÓN</h3>
-                    <p>Somos una compañía enfocada en la producción, distribución y comercialización de alimentos 
-                    saludables, listos para el consumo, fabricados
-                    con procesos innovadores y de alta calidad.</p>
-                    <p>
-                    Somos una compañía en proceso de crecimiento
-                    sostenible y rentable, soportado en un modelo 
-                    que mejora la calidad de vida de los consumidores y el proyecto de vida
-                    de nuestros  colaboradores. </p>
+
+            <div class="row time-mid">
+                <img src="images/timeline/div1.png">
             </div>
-            <div class="col ">
-                <h3>VISIÓN</h3>
-                <p>Ser la compañía líder en el sector Gastronómico 
-                - Food Services en Colombia, con la creación
-                de  un portafolio de negocios que abarca la fabricación y venta de los productos preparados 
-                listos para consumir, la cadena más importante
-                de restaurantes de alta calidad y bajo costo
-                y el apoyo de proyectos Gastronómicos independientes. Ser la empresa líder
-                en soluciones Gastronómicas para el consumidor Colombiano.</p>
+
+            <div class="row orange time-item">
+                <div class="color-block">2016</div>
+                <div class="image">
+                    <img src="images/timeline/date2.png">
+                </div>
+                <div class="text">
+                En Mayo de 2016 Gastroinnova Internacional
+                adquiere el 100% del capital accionario de 
+                Gastroinnova SAS.</div>
             </div>
+
+            <div class="row orange time-item">
+                <div class="color-block"></div>
+                <div class="image">
+                    <img src="images/timeline/date3.png">
+                </div>
+                <div class="text">
+                En julio 2016 se traslada la operación a la zona franca de Intexzona, con una capacidad  instalada de hasta 8.000 uds diarias, con 2 turnos.</div>
+            </div>
+
+            <div class="row orange time-item">
+                <div class="color-block"></div>
+                <div class="image">
+                    <img src="images/timeline/date4.png">
+                </div>
+                <div class="text">
+                Desde mediados de 2016 se inicia el desarrollo del proyecto DELIZ destinado a convertirse en el de mayor impacto en la empresa 2017.</div>
+            </div>
+
+             <div class="row time-mid">
+                <img src="images/timeline/div2.png">
+            </div>
+
+               <div class="row red time-item">
+                <div class="color-block">2017</div>
+                <div class="image">
+                    <img src="images/timeline/date5.png">
+                </div>
+                <div class="text">
+               En diciembre 2017 se inaugura el primer local
+de comida  DELIZ. A la fecha existen 7 restaurantes
+en operación y 3 en proceso de apertura. 
+                </div>
+            </div>
+
+            <div class="row time-mid">
+                <img src="images/timeline/div3.png">
+            </div>
+
+            <div class="row yellow time-item">
+                <div class="color-block">2018</div>
+                <div class="image">
+                    <img src="images/timeline/date6.png">
+                </div>
+                <div class="text">
+               En 2018 comercializamos 12 recetas y contamos con 22
+recetas con registro INVIMA. También este año se inicia una tercera línea de negocios con la negociación de las marcas 
+Bukara y Smoky Monkey, primeras 2 iniciativas del proyecto de 
+Start-Ups Gastronómicas. 
+                </div>
+            </div>
+
+            <div class="row time-mid">
+                <img src="images/timeline/div4.png">
+            </div>
+
         </div>
+     
 
     </div>
 </div>

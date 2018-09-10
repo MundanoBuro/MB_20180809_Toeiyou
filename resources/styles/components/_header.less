@@ -2,6 +2,8 @@
 
 header {
   font-family: "font-black";
+  z-index: 1000;
+  background-color: white;
 }
 
 header .wrapper {
@@ -18,12 +20,20 @@ header .wrapper {
 header .wrapper img {
   display: inline-block;
   height: auto;
-  width: 7%;
-  padding: 0.5em;
+  width: 5px;
+  padding: 5px;
   -webkit-box-sizing: border-box;
   box-sizing: content-box;
 }
 
+header .wrapper img.logo {
+  display: inline-block;
+  height: auto;
+  width: 7%;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: content-box;
+}
 header.default {
   border-bottom: 0px solid green;
   -webkit-transition: all 1200ms ease-in-out;
