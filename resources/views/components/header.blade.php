@@ -1,6 +1,8 @@
 
     <div class="wrapper">
+        <a href="/">
         <img class="logo" src="images/header/gi-header-logo.png">
+        </a>
         <ul class="menu">
 
             <li class="item" 
@@ -16,14 +18,21 @@
                         </div>
                     </div>
                     <div class="item-content" >
+                        
                         <div class="sub-item">
+                            <a href="/about">
                             MISIÓN Y VISIÓN
+                            </a>
                         </div>
                         <div class="sub-item">
+                             <a href="/about">
                                 HISTORIA
+                                </a>
                         </div>
                         <div class="sub-item">
+                             <a href="/about">
                                 NUESTRA GENTE
+                                </a>
                         </div>
                     </div>
                 </div>
