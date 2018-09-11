@@ -24,16 +24,8 @@ $state = ['current' => $current];
     {{-- HTML::Head                                  --}}
     {{-------------------------------------------------}}  
     <head>
-        @include('components.meta', $metaTags)
-        <!-- <link rel="stylesheet" href="css/app.css">-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-        <link rel="stylesheet" href="lib/swiper.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="lib/swiper.min.js"></script> 
-        <script src="js/app.js"></script> 
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
-
+            @include('settings.metas', $metaTags)
+            @include('settings.assets_header', $metaTags)
     </head>
     {{-------------------------------------------------}}
 
@@ -42,22 +34,23 @@ $state = ['current' => $current];
     {{-------------------------------------------------}}
     {{-- HTML::Body                                  --}}
     {{-------------------------------------------------}}
-    <body id="app">
-    
-        <div class="preload">
-            @include('components.preloader')
+    <body>
+        <div class="v-app" id="app">
+
+        <!-- ---- LOADER ---- -->
+        <div class="loader dis-col-mid" v-if="UI.LOADER.state" v-bind:class="UI.LOADER.class">
+            <img src="images/loader/loader.gif">
         </div>
+        
+        <!-- ---- HEADER ---- -->
+        <header v-bind:class="UI.LOADER.class">
+             @include('components.header') 
+        </header>
 
-        <div class="loaded" >
-
-            @include('components.header',$state)
-
-            <main class="clients">
-
-                <section class="slider">
-                @include('components.slider') 
-                </section>
-
+        <!-- ---- MAIN ------ -->
+        <main v-bind:class="UI.LOADER.class"  class="business">
+           
+            <div class="sections">
                 <section class="clients-logos">
                     <div class="wrapper">                  <img class="client-logo" src="images/clients/client1.png" style="display:none;">
                     <img class="client-logo" src="images/clients/client2.png" style="display:none;">
@@ -68,15 +61,25 @@ $state = ['current' => $current];
                     <img class="client-logo" src="images/clients/client7.png" style="display:none;">
                 </div>
                 </section>
+                </div>
+            
+        </main>
+        
+        <!-- ---- FOOTER ---- -->
+        <footer v-bind:class="UI.LOADER.class">
+            @include('components.footer')
+        </footer>     
 
-            </main>
-             @include('components.footer') 
-        </div>
+    </div>
+    <script>
+        window["currentPage"] = "about";
 
 
-        <script src="js/main.js"></script> 
-        <script>
-            $(document).ready(function(){
+    </script>
+     @include('settings.assets_footer')
+
+     <script>
+             $(document).ready(function(){
                 setTimeout(function(){ $($(".client-logo")[0]).fadeIn(750)},500);
                 setTimeout(function(){ $($(".client-logo")[1]).fadeIn(750)},1000);
                 setTimeout(function(){ $($(".client-logo")[2]).fadeIn(750)},1500);
@@ -84,10 +87,26 @@ $state = ['current' => $current];
                 setTimeout(function(){ $($(".client-logo")[4]).fadeIn(750)},2500);
                 setTimeout(function(){ $($(".client-logo")[6]).fadeIn(750)},3000);
             });
-        </script>
-        
+     </script>
     </body>
     {{-------------------------------------------------}}
 
 </html>
 {{-----------------------------------------------------}}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

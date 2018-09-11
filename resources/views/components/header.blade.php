@@ -51,14 +51,21 @@
                         </div>
                     </div>
                     <div class="item-content">
+                        
                         <div class="sub-item">
+                             <a href="/business">
                             DELIZ
+                             </a>
                         </div>
                         <div class="sub-item">
+                             <a href="/business">
                             READY MEALS
+                             </a>
                         </div>
                         <div class="sub-item">
+                             <a href="/business">
                             START-UPS GASTRONÓMICAS
+                             </a>
                         </div>
                     </div>
                 </div>
@@ -98,7 +105,9 @@
                      <div class="item-header">
                         <div class="wrapper">
                             <img src="images/header/gi-header-div.png">
+                                <a href="/clients">
                             <span>CLIENTES</span>
+                                </a>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,33 @@
+@import "./../config/_mixins.less";
+@import "./../theme/_color.less";
+
+.ready-meals {
+  .row {
+    .flex-display(flex);
+    .flex-direction(row);
+    .flex-wrap(nowrap);
+    .justify-content(flex-start);
+    .align-content(center);
+    .align-items(center);
+    .logo {
+      width: 20%;
+      padding: 2%;
+      padding-left: 0px;
+      box-sizing: border-box;
+    }
+    .info {
+      width: 40%;
+      h2 {
+        font-size: 1.25em;
+        color: @color-red;
+        font-weight: 900;
+        margin-bottom: 1em 0em;
+      }
+      p {
+      }
+    }
+    .plus {
+      width: 40%;
+    }
+  }
+}

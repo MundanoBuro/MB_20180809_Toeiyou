@@ -24,15 +24,8 @@ $state = ['current' => $current];
     {{-- HTML::Head                                  --}}
     {{-------------------------------------------------}}  
     <head>
-        @include('components.meta', $metaTags)
-        <!-- <link rel="stylesheet" href="css/app.css">-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-        <link rel="stylesheet" href="lib/swiper.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="lib/swiper.min.js"></script> 
-        <script src="js/app.js"></script> 
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
+            @include('settings.metas', $metaTags)
+            @include('settings.assets_header', $metaTags)
     </head>
     {{-------------------------------------------------}}
 
@@ -41,33 +34,46 @@ $state = ['current' => $current];
     {{-------------------------------------------------}}
     {{-- HTML::Body                                  --}}
     {{-------------------------------------------------}}
-    <body id="app">
-    
-        <div class="preload">
-            @include('components.preloader')
+    <body>
+        <div class="v-app" id="app">
+
+        <!-- ---- LOADER ---- -->
+        <div class="loader dis-col-mid" v-if="UI.LOADER.state" v-bind:class="UI.LOADER.class">
+            <img src="images/loader/loader.gif">
         </div>
-
-        <div class="loaded" >
-            @include('components.header',$state)
-            <main>
-              <section class="slider">
-               @include('components.slider') 
-            </section>
-            <section class="info">
-                @include('components.home.info') 
-            </section>
-
-
-
-
-
-            </main>
-             @include('components.footer') 
-        </div>
-
-
-        <script src="js/main.js"></script> 
         
+        <!-- ---- HEADER ---- -->
+        <header v-bind:class="UI.LOADER.class">
+             @include('components.header') 
+        </header>
+
+        <!-- ---- MAIN ------ -->
+        <main v-bind:class="UI.LOADER.class"  class="business">
+           
+            <div class="sections">
+                <section id="business-deliz" >
+                        @include('components.business.deliz') 
+                </section>
+                <section id="business-ready">
+                        @include('components.business.ready') 
+                </section>
+                <section id="business-startups">
+                        @include('components.business.startups') 
+                </section>
+                </div>
+            
+        </main>
+        
+        <!-- ---- FOOTER ---- -->
+        <footer v-bind:class="UI.LOADER.class">
+            @include('components.footer')
+        </footer>     
+
+    </div>
+    <script>
+        window["currentPage"] = "about";
+    </script>
+     @include('settings.assets_footer')
     </body>
     {{-------------------------------------------------}}
 

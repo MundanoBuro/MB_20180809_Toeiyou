@@ -1,4 +1,5 @@
 @import "./../config/_mixins.less";
+@import "./../theme/_color.less";
 
 main.about {
   display: block;
@@ -21,6 +22,47 @@ main.about {
     .logo {
       width: 125pt;
       padding: 25pt;
+    }
+  }
+}
+.ourpeople {
+  .row {
+    .flex-display(flex);
+    .flex-direction(row);
+    .flex-wrap(wrap);
+    .justify-content(center);
+    .align-content(center);
+    .align-items(center);
+
+    .row:nth-child(1) {
+    }
+    .row:nth-child(2) {
+    }
+    .row:nth-child(3) {
+      margin: 5em auto;
+    }
+  }
+}
+.ourpeople {
+  .position {
+    width: 33%;
+    margin: 3em auto;
+    .flex-display(flex);
+    .flex-direction(row);
+    .flex-wrap(wrap);
+    .justify-content(center);
+    .align-content(center);
+    .align-items(center);
+    .title {
+      color: @color-red;
+      font-size: 1.25em;
+      font-weight: 900;
+      text-align: center;
+    }
+    .name {
+      color: @color-green;
+      font-size: 1em;
+      text-decoration: underline;
     }
   }
 }
