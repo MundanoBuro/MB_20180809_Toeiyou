@@ -99,11 +99,15 @@ $state = ['current' => $current];
             </section>
             <section class="news">
                 <div class="cover">
+                    <a href="/business">
                     <img src="images/cover/cover1.jpg">
                     <h2>
+                        
                         <img src="images/header/gi-header-div.png">
                         <span>DELIZ</span>
+                        
                     </h2>
+                    </a>
                 </div>
                 <div class="news">
                     <div class="news-title">NEWS FEED</div>
@@ -119,8 +123,7 @@ $state = ['current' => $current];
                             </div>
 
                         </li>
-                        <li class="new-feed"></li>
-                        <li class="new-feed"></li>
+                        
                     </ul>
                 </div>
             </section>

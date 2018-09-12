@@ -60,6 +60,32 @@ $state = ['current' => $current];
                 <section class="row">
                     <div class="col map">
                         @include('components.map') 
+                        <div class="contact-info">
+
+                            <div class="col">
+                                <h2>
+                                    DIRECCÓN
+                                </h2>
+                                <p>
+                                    Km 1 vía Siberia - Funza. Intexzona,
+Bodega 28A. Cota, Cundinamarca,
+Colombia.
+                                </p>
+                            </div>
+                            <div class="col">
+                                <h2>TELÉFONO</h2>
+                                <p>
+                                    (1) 8759282
+                                </p>
+                            </div>
+                            <div class="col">
+                                <h2>E-MAIL</h2>
+                                <p>
+                                    info@gastroinnova.co
+                                </p>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="col form">
                         @include('components.form') 

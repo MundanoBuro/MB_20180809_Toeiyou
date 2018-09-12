@@ -210,7 +210,7 @@ var app = new Vue({
 /* 5 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \r\n\r\n    font-size: 1em;\r\n    color: @color-gray;\r\n         ^\r\nVariable @color-gray is undefined\r\n      in C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\resources\\styles\\views\\_vw4_contact.less (line 11, column 11)\n    at runLoaders (C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\node_modules\\webpack\\lib\\NormalModule.js:195:19)\n    at C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\node_modules\\loader-runner\\lib\\LoaderRunner.js:230:18\n    at context.callback (C:\\Users\\walla\\Documents\\GitHub\\MB_20180809_Toeiyou\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)");
 
 /***/ }),
 /* 6 */
