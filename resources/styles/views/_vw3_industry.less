@@ -1,0 +1,86 @@
+@import "./../config/_mixins.less";
+@import "./../theme.less";
+
+.plots {
+  width: 100%;
+  max-width: 1000px;
+
+  display: block;
+  margin: 0 auto;
+
+  .flex-display(flex);
+  .flex-direction(row);
+  .flex-wrap(wrap);
+  .justify-content(space-between);
+  .align-content(center);
+  .align-items(center);
+}
+.plot {
+  width: 45%;
+  height: 25em;
+  margin-top: 5em;
+  border-top: 3px solid @color-red;
+
+  h2 {
+    width: 100%;
+    display: block;
+    padding: 1em;
+    box-sizing: border-box;
+    color: white;
+    font-weight: 900;
+  }
+
+  &.green h2 {
+    background-color: @color-dark-green;
+  }
+  &.yellow h2 {
+    background-color: @color-yellow;
+  }
+}
+
+#sizeOfMarket {
+  font-family: "Open Sans", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: auto;
+}
+
+#sizeOfMarket td,
+#sizeOfMarket th {
+  border: 0px dotted #fed86f;
+}
+
+#sizeOfMarket tr:nth-child(even) {
+  background-color: #fff1ce;
+}
+
+#sizeOfMarket tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+#sizeOfMarket th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: white;
+  color: @color-red;
+}
+
+#sizeOfMarket td {
+  font-weight: 900;
+  padding: 20px 1em;
+}
+
+#sizeOfMarket td:first-child {
+  font-weight: 200;
+}
+
+#sizeOfMarket th:first-child {
+  font-size: 10px;
+  color: @color-red;
+  font-weight: 900;
+}
+
+.chartjs-size-monitor {
+  height: 30em !important;
+}

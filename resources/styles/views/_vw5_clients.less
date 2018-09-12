@@ -1,0 +1,29 @@
+@import "./../config/_mixins.less";
+
+.clients-logos {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  .flex-display(flex);
+  .flex-direction(row);
+  .flex-wrap(wrap);
+  .justify-content(center);
+  .align-content(center);
+  .align-items(center);
+
+  .wrapper {
+    .flex-display(flex);
+    .flex-direction(row);
+    .flex-wrap(wrap);
+    .justify-content(center);
+    .align-content(center);
+    .align-items(center);
+  }
+
+  img {
+    width: 33%;
+    display: block;
+  }
+}

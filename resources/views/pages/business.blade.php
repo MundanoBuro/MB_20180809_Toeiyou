@@ -51,6 +51,7 @@ $state = ['current' => $current];
         <main v-bind:class="UI.LOADER.class"  class="business">
            
             <div class="sections">
+                <img class="banner" src="images/business/banner.png" width="100%">
                 <section id="business-deliz" >
                         @include('components.business.deliz') 
                 </section>

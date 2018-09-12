@@ -1,5 +1,4 @@
 
-        <img class="banner" src="images/about/banner.png" width="100%">
 
         <div class="card c-yellow">
         <div class="wrapper">

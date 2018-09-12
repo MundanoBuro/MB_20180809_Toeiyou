@@ -84,13 +84,19 @@
                     </div>
                     <div class="item-content">
                         <div class="sub-item">
+                            <a href="/industry">
                             TAMAÑO DEL MERCADO
+                            </a>
                         </div>
                         <div class="sub-item">
+                            <a href="/industry">
                             EVOLUCIÓN DEL MERCADO
+                            </a>
                         </div>
                         <div class="sub-item">
+                            <a href="/industry">
                             PROYECCIONES DEL MERCADO
+                            </a>
                         </div>
                     </div>
                     </div>

@@ -51,6 +51,9 @@ $state = ['current' => $current];
         <main v-bind:class="UI.LOADER.class"  class="business">
            
             <div class="sections">
+
+             <img class="banner" src="images/clients/banner.png" width="100%">
+
                 <section class="clients-logos">
                     <div class="wrapper">                  <img class="client-logo" src="images/clients/client1.png" style="display:none;">
                     <img class="client-logo" src="images/clients/client2.png" style="display:none;">
