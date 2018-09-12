@@ -360,6 +360,9 @@ header .menu .item.hover:nth-child(3) .item-content {
     height: auto;
     width: 100%;
   }
+  header .wrapper img.logo {
+    display: none;
+  }
   header .menu .item {
     display: block;
   }
