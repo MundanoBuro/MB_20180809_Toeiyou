@@ -355,6 +355,18 @@ header .menu .item.hover .item-content {
 header .menu .item.hover:nth-child(3) .item-content {
   height: 300%;
 }
+@media only screen and (max-width: 800px) {
+  header .wrapper {
+    height: auto;
+    width: 100%;
+  }
+  header .menu .item {
+    display: block;
+  }
+  header .menu .item img {
+    display: none;
+  }
+}
 .footer {
   width: 100%;
   height: -webkit-fit-content;
@@ -632,7 +644,7 @@ body {
 }
 .col.map #map {
   width: 100%;
-  height: 500px;
+  height: 290px;
 }
 .col.form {
   height: 400px;

@@ -1,14 +1,45 @@
 @import "./../theme.less";
+@import "./../config.less";
 
 .contact-info {
+  .col-22 {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 1em;
+    padding-left: 0em;
+    &:first-child {
+      width: 40%;
+    }
+
+    .flex-display(flex);
+    .flex-direction(column);
+    .flex-wrap(wrap);
+    .justify-content(flex-start);
+    .align-content(flex-start);
+    .align-items(flex-start);
+  }
+
+  .flex-display(flex);
+  .flex-direction(row);
+  .flex-wrap(wrap);
+  .justify-content(flex-start);
+  .align-content(flex-start);
+  .align-items(flex-start);
+
   h2 {
     font-size: 1.25em;
     color: @color-dark-green;
     font-family: "font-black";
   }
   p {
-    font-size: 1em;
+    font-size: 0.9em;
     color: gray;
     font-family: "font-light";
   }
+}
+
+.contact .col.map {
+  .justify-content(flex-start);
+  .align-content(flex-start);
+  .align-items(flex-start);
 }

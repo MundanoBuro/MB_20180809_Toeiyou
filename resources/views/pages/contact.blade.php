@@ -62,9 +62,9 @@ $state = ['current' => $current];
                         @include('components.map') 
                         <div class="contact-info">
 
-                            <div class="col">
+                            <div class="col-22">
                                 <h2>
-                                    DIRECCÓN
+                                    DIRECCIÓN
                                 </h2>
                                 <p>
                                     Km 1 vía Siberia - Funza. Intexzona,
@@ -72,13 +72,13 @@ Bodega 28A. Cota, Cundinamarca,
 Colombia.
                                 </p>
                             </div>
-                            <div class="col">
+                            <div class="col-22">
                                 <h2>TELÉFONO</h2>
                                 <p>
                                     (1) 8759282
                                 </p>
                             </div>
-                            <div class="col">
+                            <div class="col-22">
                                 <h2>E-MAIL</h2>
                                 <p>
                                     info@gastroinnova.co
