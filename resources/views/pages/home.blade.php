@@ -26,6 +26,32 @@ $state = ['current' => $current];
     <head>
             @include('settings.metas', $metaTags)
             @include('settings.assets_header', $metaTags)
+
+                     <style>
+                .swiper-bg{
+                    width: 100vw;
+                    height:100%;
+                    min-height: 10em;
+                    display: block;
+                    background-size: cover;
+                    background-position: center;
+                }  
+                
+                 .swiper-bg.sd1{
+                     background-image: url("images/slider/i1.jpg");
+                 }
+                 .swiper-bg.sd2{background-image: url("images/slider/i1.jpg");}
+                 .swiper-bg.sd3{background-image: url("images/slider/i2.jpg");}
+                 .swiper-bg.sd4{background-image: url("images/slider/i3.jpg");}
+                 .swiper-bg.sd5{background-image: url("images/slider/i4.jpg");}
+                 .swiper-bg.sd6{background-image: url("images/slider/i5.jpg");}
+                 .swiper-bg.sd7{background-image: url("images/slider/i6.jpg");}
+                 .swiper-bg.sd8{background-image: url("images/slider/i7.jpg");}
+                 .swiper-bg.sd9{background-image: url("images/slider/i8.jpg");}
+
+                </style>
+
+
     </head>
     {{-------------------------------------------------}}
 
@@ -51,15 +77,19 @@ $state = ['current' => $current];
             
             <section class="slider">
 
+       
+
                 <swiper ref="awesomeSwiperA" :options="swiperOptionA" @set-translate="onSetTranslate">
                     <!-- slides -->
-                    <swiper-slide>I'm Slide 1</swiper-slide>
-                    <swiper-slide>I'm Slide 2</swiper-slide>
-                    <swiper-slide>I'm Slide 3</swiper-slide>
-                    <swiper-slide>I'm Slide 4</swiper-slide>
-                    <swiper-slide>I'm Slide 5</swiper-slide>
-                    <swiper-slide>I'm Slide 6</swiper-slide>
-                    <swiper-slide>I'm Slide 7</swiper-slide>
+                    <swiper-slide> <div class="swiper-bg sd1"></div> </swiper-slide>
+                    <swiper-slide> <div class="swiper-bg sd2"></div> </swiper-slide>
+                    <swiper-slide> <div class="swiper-bg sd3"></div> </swiper-slide>
+                    <swiper-slide> <div class="swiper-bg sd4"></div> </swiper-slide>
+                    <swiper-slide> <div class="swiper-bg sd5"></div> </swiper-slide>
+                    <swiper-slide> <div class="swiper-bg sd6"></div> </swiper-slide>
+                    <swiper-slide> <div class="swiper-bg sd7"></div> </swiper-slide>
+                    <swiper-slide> <div class="swiper-bg sd8"></div> </swiper-slide>
+                    <swiper-slide> <div class="swiper-bg sd9"></div> </swiper-slide>
                     <!-- Optional controls -->
                     <div class="swiper-pagination"  slot="pagination"></div>
                     <div class="swiper-button-prev" slot="button-prev"></div>

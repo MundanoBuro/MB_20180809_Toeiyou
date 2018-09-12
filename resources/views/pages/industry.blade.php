@@ -71,23 +71,23 @@ $state = ['current' => $current];
                        
                         <tr>
                             <td>ESTABLECIMIENTOS/OUTLETS</td>
-                            <td>2.3</td>
-                            <td>2.8</td>
-                            <td>14.9</td>
+                            <td>2.5</td>
+                            <td>2.2</td>
+                            <td>11.6</td>
                         </tr>
 
                            <tr>
                             <td>TRANSACCIONES</td>
-                            <td>1</td>
-                            <td>3.4</td>
-                            <td>18.2</td>
+                            <td>1.9</td>
+                            <td>1.9</td>
+                            <td>10.1</td>
                         </tr>
 
                          <tr>
                             <td>VENTAS TOTALES (Miles de MM)</td>
-                            <td>1.5</td>
-                            <td>5.2</td>
-                            <td>28.7</td>
+                            <td>2.8</td>
+                            <td>2.5</td>
+                            <td>13.3</td>
                         </tr>
 
                          <tr>
@@ -142,7 +142,7 @@ $state = ['current' => $current];
 
 
                         </table>
-                        <h2>EVOLUCIÓNDEL MERCADO</h2>
+                        <h2>EVOLUCIÓN DEL MERCADO</h2>
                     </div>
                 </div>
  
