@@ -103,8 +103,6 @@
             </li>
 
             <li class="item" 
-                v-on:mouseover="UI.MENU.CLIENTS.uClass = 'hover' "
-                v-on:mouseleaver="UI.MENU.CLIENTS.uClass = 'default' "
                 v-bind:class="UI.MENU.CLIENTS.uClass">
 
                 <div class="wrapper">
@@ -121,15 +119,15 @@
             </li>
 
             <li class="item" 
-               v-on:mouseover="UI.MENU.CONTACT.uClass = 'hover' "
-                v-on:mouseleave="UI.MENU.CONTACT.uClass = 'default' "
                 v-bind:class="UI.MENU.CONTACT.uClass">
 
                 <div class="wrapper">
                      <div class="item-header">
                         <div class="wrapper">
                             <img src="images/header/gi-header-div.png">
+                            <a href="/contact">
                             <span>CONTACTO</span>
+                            </a>
                         </div>
                     </div>
                 </div>

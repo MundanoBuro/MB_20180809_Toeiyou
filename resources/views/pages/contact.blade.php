@@ -1,3 +1,6 @@
+
+
+
 <!doctype html>
 {{-----------------------------------------------------}}  
 {{--       Block :: View Blade                       --}}      
@@ -24,15 +27,8 @@ $state = ['current' => $current];
     {{-- HTML::Head                                  --}}
     {{-------------------------------------------------}}  
     <head>
-        @include('components.meta', $metaTags)
-        <!-- <link rel="stylesheet" href="css/app.css">-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-        <link rel="stylesheet" href="lib/swiper.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="lib/swiper.min.js"></script> 
-        <script src="js/app.js"></script> 
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
+            @include('settings.metas', $metaTags)
+            @include('settings.assets_header', $metaTags)
     </head>
     {{-------------------------------------------------}}
 
@@ -41,21 +37,25 @@ $state = ['current' => $current];
     {{-------------------------------------------------}}
     {{-- HTML::Body                                  --}}
     {{-------------------------------------------------}}
-    <body id="app">
-    
-        <div class="preload">
-            @include('components.preloader')
+    <body>
+        <div class="v-app" id="app">
+
+        <!-- ---- LOADER ---- -->
+        <div class="loader dis-col-mid" v-if="UI.LOADER.state" v-bind:class="UI.LOADER.class">
+            <img src="images/loader/loader.gif">
         </div>
+        
+        <!-- ---- HEADER ---- -->
+        <header v-bind:class="UI.LOADER.class">
+             @include('components.header') 
+        </header>
 
-        <div class="loaded" >
+        <!-- ---- MAIN ------ -->
+        <main v-bind:class="UI.LOADER.class"  class="contact">
+           
+            <div class="sections">
 
-            @include('components.header',$state)
-
-            <main id="app" class="contact" >
-
-                <section class="slider">
-                    @include('components.slider',$state) 
-                </section>
+             <img class="banner" src="images/contact/banner.png" width="100%">
 
                 <section class="row">
                     <div class="col map">
@@ -64,16 +64,28 @@ $state = ['current' => $current];
                     <div class="col form">
                         @include('components.form') 
                     </div>
+
                 </section>
+                </section>
+                </div>
+            
+        </main>
+        
+        <!-- ---- FOOTER ---- -->
+        <footer v-bind:class="UI.LOADER.class">
+            @include('components.footer')
+        </footer>     
 
-            </main>
-             @include('components.footer') 
-        </div>
+    </div>
+    <script>
+        window["currentPage"] = "about";
 
 
-        <script src="js/main.js"></script> 
+    </script>
+     @include('settings.assets_footer')
 
-        <script>
+
+             <script>
                 var map;
                 function initMap() {
                   map = new google.maps.Map(document.getElementById('map'), {
@@ -89,12 +101,21 @@ $state = ['current' => $current];
                 });
                 }
               </script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARPuQy0i2xt9IroBK09guHP1VtHK0RXhA&callback=initMap"
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARPuQy0i2xt9IroBK09guHP1VtHK0RXhA&callback=initMap"
 async defer></script>
-        
+     <script>
+         
+     </script>
     </body>
     {{-------------------------------------------------}}
 
 </html>
 {{-----------------------------------------------------}}  
+
+
+
+
+
+
+
+
