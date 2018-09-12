@@ -345,17 +345,13 @@ main.about img.banner {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  -ms-justify-content: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -ms-align-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  -ms-align-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .ready-meals .row .logo {
   width: 20%;
@@ -371,16 +367,52 @@ main.about img.banner {
   font-size: 1.25em;
   color: #961934;
   font-weight: 900;
-  margin-bottom: 1em 0em;
+  margin: 1em 0em 0em 0em;
+}
+.ready-meals .row .info p {
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 .ready-meals .row .plus {
   width: 40%;
+}
+.col.info.deliz p {
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 @font-face {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   src: url("https://fonts.googleapis.com/css?family=Raleway:300, 500, 700");
+  font-display: block;
+}
+@font-face {
+  font-family: "Avenir-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url(/fonts/AvenirLTStd-Light.otf?0b78ec9d509f67bfe3f8458c9d285df0);
+  font-display: block;
+}
+@font-face {
+  font-family: "Avenir-Black";
+  font-style: normal;
+  font-weight: 300;
+  src: url(/fonts/AvenirLTStd-Black.otf?b1abb878e2529cb5cb4450139844155d);
+  font-display: block;
+}
+@font-face {
+  font-family: "font-light";
+  font-style: normal;
+  font-weight: 300;
+  src: url(/fonts/AvenirLTStd-Light.otf?0b78ec9d509f67bfe3f8458c9d285df0);
+  font-display: block;
+}
+@font-face {
+  font-family: "font-black";
+  font-style: normal;
+  font-weight: 300;
+  src: url(/fonts/AvenirLTStd-Black.otf?b1abb878e2529cb5cb4450139844155d);
   font-display: block;
 }
 .card.c-yellow .nav {
@@ -454,6 +486,7 @@ main.about img.banner {
 .card .nav h2 {
   display: inline-block;
   vertical-align: middle;
+  max-width: 5em;
 }
 .card .nav img {
   width: 1.5em;
@@ -847,4 +880,7 @@ main.about img.banner {
 .clients-logos img {
   width: 33%;
   display: block;
+}
+* {
+  font-family: "Avenir-Light";
 }

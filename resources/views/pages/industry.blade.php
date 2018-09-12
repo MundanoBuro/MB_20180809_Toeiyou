@@ -102,7 +102,7 @@ $state = ['current' => $current];
                         <h2>PROYECCIÓN DEL MERCADO</h2>
                     </div>
                
-                    <div class="plot green">
+                    <div class="plot yellow">
                          <table id="sizeOfMarket">
 
                         <tr>

@@ -5,6 +5,34 @@
   src: url("https://fonts.googleapis.com/css?family=Raleway:300, 500, 700");
   font-display: block;
 }
+@font-face {
+  font-family: "Avenir-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url(/fonts/AvenirLTStd-Light.otf?0b78ec9d509f67bfe3f8458c9d285df0);
+  font-display: block;
+}
+@font-face {
+  font-family: "Avenir-Black";
+  font-style: normal;
+  font-weight: 300;
+  src: url(/fonts/AvenirLTStd-Black.otf?b1abb878e2529cb5cb4450139844155d);
+  font-display: block;
+}
+@font-face {
+  font-family: "font-light";
+  font-style: normal;
+  font-weight: 300;
+  src: url(/fonts/AvenirLTStd-Light.otf?0b78ec9d509f67bfe3f8458c9d285df0);
+  font-display: block;
+}
+@font-face {
+  font-family: "font-black";
+  font-style: normal;
+  font-weight: 300;
+  src: url(/fonts/AvenirLTStd-Black.otf?b1abb878e2529cb5cb4450139844155d);
+  font-display: block;
+}
 .display-col-center-center {
   display: -ms-flexbox;
   display: -ms-flex;
@@ -214,6 +242,7 @@
 .card .nav h2 {
   display: inline-block;
   vertical-align: middle;
+  max-width: 5em;
 }
 .card .nav img {
   width: 1.5em;

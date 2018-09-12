@@ -15,7 +15,10 @@
         <img class="about-photo" src="images/business/deliz2.png">
         </div>
         </div>
-        <div class="col info">
+        <style>
+
+        </style>
+        <div class="col info deliz">
    
         <p>Durante 2017 se pudo observar que los consumidores apostaron por establecimientos más rápidos que ofrecen menús con una buena relación calidad-precio, un ambiente agradable 
         similar al de los restaurantes de mayor tarifa

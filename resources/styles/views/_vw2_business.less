@@ -6,9 +6,9 @@
     .flex-display(flex);
     .flex-direction(row);
     .flex-wrap(nowrap);
-    .justify-content(flex-start);
+    .align-items(flex-start);
     .align-content(center);
-    .align-items(center);
+    .align-items(flex-start);
     .logo {
       width: 20%;
       padding: 2%;
@@ -21,13 +21,20 @@
         font-size: 1.25em;
         color: @color-red;
         font-weight: 900;
-        margin-bottom: 1em 0em;
+        margin: 1em 0em 0em 0em;
       }
       p {
+        padding-bottom: 1em;
+        padding-top: 1em;
       }
     }
     .plus {
       width: 40%;
     }
   }
+}
+
+.col.info.deliz p {
+  padding-bottom: 1em;
+  padding-top: 1em;
 }

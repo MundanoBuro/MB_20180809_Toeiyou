@@ -4,7 +4,7 @@
 <div class="wrapper">
 
 <div class="nav">
-<img src="images/cards/gi-cards-div.png">
+<img src="images/cards/gi-cards-div-y.png">
 <h2>Ready Meals</h2>
 </div>
 
@@ -16,7 +16,7 @@
             <h2>LA PITADORA</h2>
             <p>Producto innovador en el mercado colombiano, 
             La Pitadora ofrece comidas tradicionales de la 
-            gastronomía colombiana, empacadas al vacíoy listas para consumir.
+            gastronomía colombiana, empacadas al vacío y listas para consumir.
             Su oferta consiste en tres líneas principales de alimentos: Sopas, Arroces y Pastas.</p>
         </div>
     </div>
