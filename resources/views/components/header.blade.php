@@ -1,10 +1,11 @@
-
-    <div class="wrapper">
+<div class="wrapper">
         <a href="/">
         <img class="logo" src="images/header/gi-header-logo.png">
         </a>
         <ul class="menu">
 
+
+            
             <li class="item" 
                 v-on:mouseover="UI.MENU.ABOUT.uClass = 'hover' "
                 v-on:mouseleave=" UI.MENU.ABOUT.uClass = 'default' "
@@ -39,6 +40,11 @@
                 
             </li>
 
+
+
+
+
+
             <li class="item" 
                 v-on:mouseover="UI.MENU.BUSINESS.uClass = 'hover' "
                 v-on:mouseleave=" UI.MENU.BUSINESS.uClass = 'default' "
@@ -47,7 +53,7 @@
                     <div class="item-header">
                         <div class="wrapper">
                             <img src="images/header/gi-header-div.png" style="width: 0.5rem;">
-                            <span>LÍNEAS DE NEGOCIO</span>
+                            <span style="max-width: 5em">LÍNEAS DE NEGOCIO</span>
                         </div>
                     </div>
                     <div class="item-content">
@@ -71,6 +77,19 @@
                 </div>
             </li>
 
+
+
+
+
+
+
+
+
+
+
+
+            
+
             <li class="item" 
                 v-on:mouseover="UI.MENU.INDUSTRY.uClass = 'hover' "
                v-on:mouseleave=" UI.MENU.INDUSTRY.uClass = 'default' "
@@ -79,7 +98,7 @@
                     <div class="item-header">
                         <div class="wrapper">
                             <img src="images/header/gi-header-div.png" style="width: 0.5rem;">
-                            <span>INFORMACIÓN FINANCIERA</span>
+                            <span style="max-width: 5em">INFORMACIÓN FINANCIERA</span>
                         </div>
                     </div>
                     <div class="item-content">
@@ -101,6 +120,12 @@
                     </div>
                     </div>
             </li>
+
+
+
+
+
+            
 
             <li class="item" 
                 v-bind:class="UI.MENU.CLIENTS.uClass">
