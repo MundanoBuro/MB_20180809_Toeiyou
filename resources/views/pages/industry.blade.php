@@ -194,7 +194,7 @@ $state = ['current' => $current];
                         data: [59.085,60.855,62.323,64.107,66.316,67.867]
                     },
                     {
-                        label: 'VEMTAS TOTALES (Miles de MM)',
+                        label: 'VENTAS TOTALES (Miles de MM)',
                         borderColor: "#9D1728",
                         backgroundColor:"rgba(0,0,0,0)",
                         borderCapStyle: 'butt',

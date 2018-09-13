@@ -13,7 +13,7 @@
                 <div class="wrapper">
                     <div class="item-header">
                         <div class="wrapper">
-                            <img src="images/header/gi-header-div.png">
+                            <img src="images/header/gi-header-div.png" style="width: 0.5rem;">
                             <span>NOSOTROS</span>
                         </div>
                     </div>
@@ -46,8 +46,8 @@
                 <div class="wrapper">
                     <div class="item-header">
                         <div class="wrapper">
-                            <img src="images/header/gi-header-div.png">
-                            <span>LINEAS DE NEGOCIO</span>
+                            <img src="images/header/gi-header-div.png" style="width: 0.5rem;">
+                            <span>LÍNEAS DE NEGOCIO</span>
                         </div>
                     </div>
                     <div class="item-content">
@@ -78,8 +78,8 @@
                     <div class="wrapper">
                     <div class="item-header">
                         <div class="wrapper">
-                            <img src="images/header/gi-header-div.png">
-                            <span>INFORMACIÓN FINENCIERA</span>
+                            <img src="images/header/gi-header-div.png" style="width: 0.5rem;">
+                            <span>INFORMACIÓN FINANCIERA</span>
                         </div>
                     </div>
                     <div class="item-content">
@@ -107,8 +107,8 @@
 
                 <div class="wrapper">
                      <div class="item-header">
-                        <div class="wrapper">
-                            <img src="images/header/gi-header-div.png">
+                        <div class="wrapper"> 
+                            <img src="images/header/gi-header-div.png" style="width: 0.5rem;">
                                 <a href="/clients">
                             <span>CLIENTES</span>
                                 </a>
@@ -124,7 +124,7 @@
                 <div class="wrapper">
                      <div class="item-header">
                         <div class="wrapper">
-                            <img src="images/header/gi-header-div.png">
+                            <img src="images/header/gi-header-div.png" style="width: 0.5rem;">
                             <a href="/contact">
                             <span>CONTACTO</span>
                             </a>

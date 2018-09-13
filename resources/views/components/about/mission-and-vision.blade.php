@@ -18,6 +18,7 @@
         </div>
         </div>
         <div class="col info">
+
         <h3>MISIÓN</h3>
         <p>Somos una compañía enfocada en la producción, distribución y comercialización de alimentos 
         saludables, listos para el consumo, fabricados
@@ -26,15 +27,17 @@
         Somos una compañía en proceso de crecimiento
         sostenible y rentable, soportado en un modelo 
         que mejora la calidad de vida de los consumidores y el proyecto de vida
-        de nuestros  colaboradores. </p>
+        de nuestros  colaboradores. 
+        </p>
+        <br>
+
         <h3>VISIÓN</h3>
         <p>Ser la compañía líder en el sector Gastronómico 
         - Food Services en Colombia, con la creación
         de  un portafolio de negocios que abarca la fabricación y venta de los productos preparados 
         listos para consumir, la cadena más importante
         de restaurantes de alta calidad y bajo costo
-        y el apoyo de proyectos Gastronómicos independientes. Ser la empresa líder
-        en soluciones Gastronómicas para el consumidor Colombiano.</p>
+        y el apoyo de proyectos Gastronómicos independientes. </p>
         </div>
 
         <div class="col plus">

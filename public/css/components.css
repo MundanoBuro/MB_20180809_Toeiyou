@@ -1043,6 +1043,7 @@ body {
           align-items: flex-start;
 }
 .contact .col {
+  margin: 2em;
   display: -ms-flexbox;
   display: -ms-flex;
   display: -webkit-box;
@@ -1067,6 +1068,7 @@ body {
 }
 .contact .col:last-child {
   background-color: #FFB90F;
+  margin-right: 0em;
 }
 .contact .row-2 {
   width: 100%;

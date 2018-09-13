@@ -98,7 +98,32 @@ $state = ['current' => $current];
 
             </section>
             <section class="news">
-                <div class="cover">
+
+                @php
+                    $rand_num = rand(1,3);
+
+                    $cover1_display = "none";
+                    $cover2_display = "none";
+                    $cover3_display = "none";
+
+                    if($rand_num == 1){
+                        $cover1_display = "inline-block";
+                    }
+
+                     if($rand_num == 2){
+$cover2_display = "inline-block";
+                    }
+
+                     if($rand_num == 3){
+$cover3_display = "inline-block";
+                    }
+
+                    
+                    
+                @endphp
+
+
+                <div class="cover" style="display : {{$cover1_display}}">
                     <a href="/business">
                     <img src="images/cover/cover1.jpg">
                     <h2>
@@ -109,6 +134,29 @@ $state = ['current' => $current];
                     </h2>
                     </a>
                 </div>
+                <div class="cover" style="display : {{$cover2_display}}">
+                    <a href="/business">
+                    <img src="images/cover/cover2.jpg">
+                    <h2>
+                        
+                        <img src="images/header/gi-header-div.png">
+                        <span>READY MEALS</span>
+                        
+                    </h2>
+                    </a>
+                </div>
+                <div class="cover" style="display : {{$cover3_display}}">
+                    <a href="/business">
+                    <img src="images/cover/cover3.jpg">
+                    <h2>
+                        
+                        <img src="images/header/gi-header-div.png">
+                        <span>START UPS GASTRONOMICAS</span>
+                        
+                    </h2>
+                    </a>
+                </div>
+
                 <div class="news">
                     <div class="news-title">NEWS FEED</div>
                     <ul class="news-feed">

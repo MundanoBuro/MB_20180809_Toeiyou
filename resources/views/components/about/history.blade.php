@@ -17,7 +17,7 @@
                 <div class="image">
                     <img src="images/timeline/date1.png">
                 </div>
-                <div class="text">Gastroinnova SAS nace a finales de 2015 dedicada a la fabricación de comidas preparadas (Ready Meals) empacadas al vacío y pasteurizadas para conservar su frescura y sabor hasta por (90) días en refrigeración, utilizando tecnología MICVAC.</div>
+                <div class="text">Gastroinnova SAS nace a finales de 2015 dedicada a la fabricación de comidas preparadas (Ready Meals), empacadas al vacío y pasteurizadas para conservar su frescura y sabor hasta por (90) días en refrigeración, utilizando tecnología MICVAC.</div>
             </div>
 
             <div class="row time-mid">

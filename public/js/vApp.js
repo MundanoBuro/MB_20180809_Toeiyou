@@ -149,14 +149,18 @@ var app = new Vue({
     }
   },
   mounted: function mounted() {
-    this.waitOnLoad();
+    if (!window.localStorage.getItem("load")) {
+      this.waitOnLoad(500);
+    } else {
+      this.waitOnLoad(0);
+    }
   },
 
   methods: {
     onSetTranslate: function onSetTranslate() {
       console.log("onSetTranslate");
     },
-    waitOnLoad: function waitOnLoad() {
+    waitOnLoad: function waitOnLoad(time) {
       var that = this;
       var url = location.href;
       that.UI.LOADER.class = "default";
@@ -165,10 +169,10 @@ var app = new Vue({
         setTimeout(function () {
           that.UI.LOADER.state = false;
           setTimeout(function () {
-            if (url.includes("/about")) {}
-          }, 1000);
-        }, 500);
-      }, 1500);
+            window.localStorage.setItem("load", "ok");
+          }, time);
+        }, time);
+      }, time);
     },
 
     menuOnHover: function menuOnHover(parent, page) {

@@ -30,8 +30,7 @@
         </p><p>
         Todos estos elementos se encuentran presentes en el modelo de negocios de DELIZ, nuestra primera cadena
         de restaurantes de autoservicio, que ofrece comidas saludables, balanceadas y sabrosas,
-        en ambientes impecables y agradables. Una solución rápida y a precios sin competencia
-        para desayunos, almuerzos, antojos y tardeadas on-the-go.
+        en ambientes impecables y agradables. 
         </p><p>
         Actualmente contamos con 7 locales
         en la ciudad de Bogotá. </p>
