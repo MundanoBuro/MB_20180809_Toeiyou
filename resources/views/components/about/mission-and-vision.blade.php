@@ -20,15 +20,10 @@
         <div class="col info">
 
         <h3>MISIÓN</h3>
-        <p>Somos una compañía enfocada en la producción, distribución y comercialización de alimentos 
+        <p style="line-height: 110%">Somos una compañía enfocada en la producción, distribución y comercialización de alimentos 
         saludables, listos para el consumo, fabricados
         con procesos innovadores y de alta calidad.</p>
-        <p>
-        Somos una compañía en proceso de crecimiento
-        sostenible y rentable, soportado en un modelo 
-        que mejora la calidad de vida de los consumidores y el proyecto de vida
-        de nuestros  colaboradores. 
-        </p>
+
         <br>
 
         <h3>VISIÓN</h3>
