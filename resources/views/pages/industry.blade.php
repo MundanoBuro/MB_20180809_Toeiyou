@@ -54,12 +54,18 @@ $state = ['current' => $current];
                 <img class="banner" src="images/industry/banner.png" width="100%">
                 
                 <div class="plots">
+
                     <div class="plot green">
+                        <h3 style="font-size:0.8em;color:gray;padding:1em 0em;">UNITS AND VALUES SELLS IN CONSUMER FOODSERVICE 2012-17*</h3>
                         <line-chart :height="300"></line-chart>
                         <h2>TAMAÑO DEL MERCADO</h2>
+                        <span style="font-size:0.8em;color:gray;padding:1em 0em;"> *EUROMONIOR INTERNATIONAL from official statistics, trade associations, trade press, company research, trade interviews, trade resources</span>
                     </div>
                
                     <div class="plot yellow">
+                        
+                        <h3 style="font-size:0.8em;color:gray;padding:1em 0em;">UNITS, TRANSACTIONS AND VALUE SALES IN CONSUMER FOODSERVICE: %GROWTH*</h3>
+
                         <table id="sizeOfMarket">
 
                         <tr>
@@ -100,9 +106,15 @@ $state = ['current' => $current];
 
                         </table>
                         <h2>PROYECCIÓN DEL MERCADO</h2>
+                    
+                        <span style="font-size:0.8em;color:gray;padding:1em 0em;"> * EUROMONITOR INTERNATIONAL from official statistics, trade associations, trade press, company, research, trade interviews, trade resources</span>
+
                     </div>
                
                     <div class="plot yellow">
+
+                     <h3 style="font-size:0.8em;color:gray;padding:1em 0em;">UNITS, TRANSACTIONS AND VALUE SALES IN CONSUMER FOODSERVICE: %GROWTH*</h3>
+
                          <table id="sizeOfMarket">
 
                         <tr>
@@ -143,7 +155,10 @@ $state = ['current' => $current];
 
                         </table>
                         <h2>EVOLUCIÓN DEL MERCADO</h2>
+                                          <span style="font-size:0.8em;color:gray;padding:1em 0em;"> * EUROMONITOR INTERNATIONAL from official statistics, trade associations, trade press, company, research, trade interviews, trade resources</span>
+
                     </div>
+
                 </div>
  
                 
@@ -234,6 +249,25 @@ $state = ['current' => $current];
                             fontSize: 20
                         }
                     }]
+                },
+                "animation": {
+                    "duration": 1,
+                    "onComplete": function() {
+                        var chartInstance = this.chart,
+                        ctx = chartInstance.ctx;
+
+                        ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'bottom';
+
+                        this.data.datasets.forEach(function(dataset, i) {
+                        var meta = chartInstance.controller.getDatasetMeta(i);
+                        meta.data.forEach(function(bar, index) {
+                            var data = dataset.data[index];
+                            ctx.fillText(data, bar._model.x, bar._model.y - 10);
+                        });
+                        });
+                    }
                 }
             }
             )}

@@ -33,6 +33,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vue-awesome-swiper@3.1.2/dist/vue-awesome-swiper.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 <script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
+
 <script src="js/vApp.js"></script>
 
 

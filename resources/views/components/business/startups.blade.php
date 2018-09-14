@@ -9,10 +9,10 @@
 Gastronómicas</h2>
 </div>
 
-<div class="content">
+<div class="content" style="height: 40em;">
 
     <div class="row">
-        <img class="logo" src="images/business/ready1.png">
+        <img class="logo" src="images/business/startups1.png">
         <div class="info">
             <h2>SMOKY MONKEY</h2>
             <p>Restaurant de parrilla y BBQ, con una oferta
@@ -29,7 +29,7 @@ combinada con  coctelería clásica.</p>
     </div>
 
     <div class="row">
-        <img class="logo"  src="images/business/ready2.png">
+        <img class="logo"  src="images/business/startups2.png">
         <div class="info">
             <h2>RESTAURANTE
 BUKARA</h2>
@@ -38,7 +38,7 @@ que llenará corazones con su comida,
 en un espacio agradable, elegante
 y muy exigente en la calidad de cada uno
 de sus platos, preparados con los mejores ingredientes locales.
-
+</p><p>
 Exigentes y perfeccionistas, Bukara evoca
 la cultura europea adaptada al contexto bogotano, con elementos que responden
 al slow-food, ofreciendo la mejor comida, servicio, experiencia y exclusividad. </p>

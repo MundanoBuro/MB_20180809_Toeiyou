@@ -370,6 +370,12 @@ header .menu .item.hover:nth-child(3) .item-content {
     display: none;
   }
 }
+header .item {
+  cursor: pointer;
+}
+header span:hover {
+  color: gray;
+}
 .footer {
   width: 100%;
   height: -webkit-fit-content;
