@@ -38,7 +38,7 @@
             <div class="row orange time-item">
                 <div class="color-block"></div>
                 <div class="image">
-                    <img src="images/timeline/date3.png">
+                    <img src="images/timeline/date3.jpeg">
                 </div>
                 <div class="text">
                 En julio 2016 se traslada la operación a la zona franca de Intexzona, con una capacidad  instalada de hasta 8.000 uds diarias, con 2 turnos.</div>
