@@ -701,7 +701,7 @@ main.about img.banner {
      object-fit: contain;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 1em;
+  padding: 0.5em;
 }
 .timeline .row .text {
   display: -ms-flexbox;
