@@ -21,17 +21,17 @@
                     <div class="item-content" >
                         
                         <div class="sub-item">
-                            <a href="/about">
+                            <a href="/about#missionAndVision">
                             MISIÓN Y VISIÓN
                             </a>
                         </div>
                         <div class="sub-item">
-                             <a href="/about">
+                             <a href="/about#history">
                                 HISTORIA
                                 </a>
                         </div>
                         <div class="sub-item">
-                             <a href="/about">
+                             <a href="/about#ourpeople">
                                 NUESTRA GENTE
                                 </a>
                         </div>

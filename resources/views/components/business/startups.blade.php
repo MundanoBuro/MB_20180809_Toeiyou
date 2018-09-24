@@ -1,10 +1,10 @@
 
 
-<div class="card c-yellow ready-meals">
+<div class="card c-yellow ready-meals" v-bind:class = "UI.CARDS[5].class">
 <div class="wrapper">
 
-<div class="nav">
-<img src="images/cards/gi-cards-div.png">
+<div class="nav" v-on:click = "toogleCard('startups')">
+<img src="images/cards/gi-cards-div.png"  >
 <h2>Start-ups
 Gastronómicas</h2>
 </div>

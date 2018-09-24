@@ -1,11 +1,11 @@
 
         <img class="banner" src="images/about/banner.png" width="100%">
 
-        <div class="card c-yellow">
+        <div class="card c-yellow " v-bind:class = "UI.CARDS[0].class">
         <div class="wrapper">
 
-        <div class="nav">
-        <img src="images/cards/gi-cards-div.png">
+        <div class="nav" v-on:click = " toogleCard('missionAndVision')">
+        <img src="images/cards/gi-cards-div.png" >
         <h2>Misión y Visión</h2>
         </div>
 

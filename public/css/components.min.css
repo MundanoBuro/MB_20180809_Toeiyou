@@ -749,6 +749,7 @@ body {
   display: inline-block;
   margin-right: 5pt;
   height: 35em;
+  cursor: pointer;
 }
 .card .content {
   display: inline-block;
@@ -862,6 +863,27 @@ body {
   display: inline-block;
   vertical-align: middle;
   padding-left: 1em;
+}
+.card.hide .col.photos,
+.card.hide .col.info,
+.card.hide .col.plus {
+  display: none !important;
+}
+.card.hide .content {
+  height: 5em !important;
+}
+.card.hide .nav {
+  height: 5em !important;
+}
+.card.hide .nav img {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.card.hide .row {
+  display: none !important;
+}
+.card.hide .timeline .row {
+  display: none;
 }
 .timeline {
   height: -webkit-fit-content !important;

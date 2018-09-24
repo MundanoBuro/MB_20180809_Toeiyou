@@ -48,6 +48,7 @@
     display: inline-block;
     margin-right: 5pt;
     height: 35em;
+    cursor: pointer;
   }
   .content {
     display: inline-block;
@@ -143,5 +144,30 @@
     display: inline-block;
     vertical-align: middle;
     padding-left: 1em;
+  }
+}
+
+
+.card.hide{
+  .col.photos,.col.info,.col.plus{
+    display: none !important;
+  }
+  .content{
+    height: 5em !important;
+  }
+  .nav{
+    height: 5em !important;
+    img{
+      -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    }
+  }
+  .row{
+    display: none !important;;
+  }.timeline .row{
+    display: none;
   }
 }

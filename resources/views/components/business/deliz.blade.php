@@ -1,10 +1,10 @@
 
 
-        <div class="card c-yellow">
+        <div class="card c-yellow" v-bind:class = "UI.CARDS[3].class">
         <div class="wrapper">
 
-        <div class="nav">
-        <img src="images/cards/gi-cards-div.png">
+        <div class="nav"  v-on:click = "toogleCard('deliz')">
+        <img src="images/cards/gi-cards-div.png" >
         <h2>Deliz</h2>
         </div>
 

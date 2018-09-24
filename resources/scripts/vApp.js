@@ -54,7 +54,33 @@ var app = new Vue({
           state: "",
           uClass: "default"
         }
-      }
+      },
+      CARDS:[
+        {
+          id : "missionAndVision",
+          class : "hide"
+        },
+        {
+          id : "history",
+          class : "hide"
+        },
+        {
+          id : "ourpeople",
+          class : "hide"
+        },
+        {
+          id : "deliz",
+          class : "hide"
+        },
+        {
+          id : "ready",
+          class : "hide"
+        },
+        {
+          id : "startups",
+          class : "hide"
+        }
+      ]
     },
     isLoading: true
   },
@@ -104,6 +130,19 @@ var app = new Vue({
         this.UI.MENU[page].uClass = "default";
         clearTimeout(window["uiMenuTimer"]);
       }
+    },
+    toogleCard(cardId){
+      
+      var kCard = this.UI.CARDS.findIndex( card => {
+        return card.id == cardId;
+      });
+
+      if(this.UI.CARDS[kCard].class == 'hide'){
+        this.UI.CARDS[kCard].class = 'default';
+      }else{
+        this.UI.CARDS[kCard].class = 'hide'
+      }
+      console.log(" Vue Toogle Class for Card  : " + cardId +" on => " + this.UI.CARDS[kCard] + " kCard : " + kCard)
     }
   }
 });
