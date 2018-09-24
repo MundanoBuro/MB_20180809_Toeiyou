@@ -173,6 +173,11 @@ var app = new Vue({
     } else {
       this.waitOnLoad(0);
     }
+
+    var toSectionHash = window.location.hash.split("#");
+    var toSection = toSectionHash[1];
+    console.log($(toSection));
+    this.toogleCard(toSection);
   },
 
   methods: {
