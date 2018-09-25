@@ -101,8 +101,31 @@ var app = new Vue({
     
     var toSectionHash = window.location.hash.split("#");
     var toSection = toSectionHash[1];
-    console.log( $(toSection) );
-    this.toogleCard(toSection);
+    
+    window.setTimeout( x => {
+      var target = "missionAndVision";
+      this.toogleCard(target);
+      $('html, body').animate({
+        scrollTop: $("#" + target).offset().top
+    }, 1000);
+    },1000)
+
+    window.setTimeout( x => {
+      var target = "history";
+      this.toogleCard(target);
+      $('html, body').animate({
+        scrollTop: $("#" + target).offset().top
+    }, 1000);
+    },2000)
+
+    window.setTimeout( x => {
+      var target = "ourpeople";
+      this.toogleCard(target);
+      $('html, body').animate({
+        scrollTop: $("#" + target).offset().top
+    }, 1000);
+    },2000)
+    
     
 
   },

@@ -1,4 +1,4 @@
-<div class="card c-yellow ourpeople " v-bind:class = "UI.CARDS[2].class">
+<div class="card c-yellow ourpeople " v-bind:class = "UI.CARDS[2].class" id="ourpeople">
         <div class="wrapper">
 
 

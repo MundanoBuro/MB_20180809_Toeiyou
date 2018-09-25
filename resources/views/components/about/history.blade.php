@@ -1,4 +1,4 @@
-<div class="card c-green" v-bind:class = "UI.CARDS[1].class">
+<div class="card c-green" v-bind:class = "UI.CARDS[1].class" id="history">
         <div class="wrapper">
 
 

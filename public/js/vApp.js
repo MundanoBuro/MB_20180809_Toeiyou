@@ -168,6 +168,8 @@ var app = new Vue({
     }
   },
   mounted: function mounted() {
+    var _this = this;
+
     if (!window.localStorage.getItem("load")) {
       this.waitOnLoad(500);
     } else {
@@ -176,8 +178,30 @@ var app = new Vue({
 
     var toSectionHash = window.location.hash.split("#");
     var toSection = toSectionHash[1];
-    console.log($(toSection));
-    this.toogleCard(toSection);
+
+    window.setTimeout(function (x) {
+      var target = "missionAndVision";
+      _this.toogleCard(target);
+      $('html, body').animate({
+        scrollTop: $("#" + target).offset().top
+      }, 1000);
+    }, 1000);
+
+    window.setTimeout(function (x) {
+      var target = "history";
+      _this.toogleCard(target);
+      $('html, body').animate({
+        scrollTop: $("#" + target).offset().top
+      }, 1000);
+    }, 2000);
+
+    window.setTimeout(function (x) {
+      var target = "ourpeople";
+      _this.toogleCard(target);
+      $('html, body').animate({
+        scrollTop: $("#" + target).offset().top
+      }, 1000);
+    }, 2000);
   },
 
   methods: {

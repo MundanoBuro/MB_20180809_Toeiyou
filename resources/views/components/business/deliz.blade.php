@@ -1,6 +1,6 @@
 
 
-        <div class="card c-yellow" v-bind:class = "UI.CARDS[3].class">
+        <div class="card c-yellow" v-bind:class = "UI.CARDS[3].class" id="deliz">
         <div class="wrapper">
 
         <div class="nav"  v-on:click = "toogleCard('deliz')">
