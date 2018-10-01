@@ -59,17 +59,17 @@
                     <div class="item-content">
                         
                         <div class="sub-item">
-                             <a href="/business">
+                             <a href="/business#deliz">
                             DELIZ
                              </a>
                         </div>
                         <div class="sub-item">
-                             <a href="/business">
+                             <a href="/business#ready">
                             READY MEALS
                              </a>
                         </div>
                         <div class="sub-item">
-                             <a href="/business">
+                             <a href="/business#startups">
                             START-UPS GASTRONÓMICAS
                              </a>
                         </div>
@@ -103,17 +103,17 @@
                     </div>
                     <div class="item-content">
                         <div class="sub-item">
-                            <a href="/industry">
+                            <a href="/industry#size">
                             TAMAÑO DEL MERCADO
                             </a>
                         </div>
                         <div class="sub-item">
-                            <a href="/industry">
+                            <a href="/industry#evolution">
                             EVOLUCIÓN DEL MERCADO
                             </a>
                         </div>
                         <div class="sub-item">
-                            <a href="/industry">
+                            <a href="/industry#proyection">
                             PROYECCIONES DEL MERCADO
                             </a>
                         </div>

@@ -182,25 +182,91 @@ var app = new Vue({
     window.setTimeout(function (x) {
       var target = "missionAndVision";
       _this.toogleCard(target);
-      $('html, body').animate({
-        scrollTop: $("#" + target).offset().top
-      }, 1000);
+      if (toSection == target) {
+        $('html, body').animate({
+          scrollTop: $("#" + target).offset().top
+        }, 1000);
+      }
     }, 1000);
 
     window.setTimeout(function (x) {
       var target = "history";
       _this.toogleCard(target);
-      $('html, body').animate({
-        scrollTop: $("#" + target).offset().top
-      }, 1000);
+      if (toSection == target) {
+        $('html, body').animate({
+          scrollTop: $("#" + target).offset().top
+        }, 1000);
+      }
     }, 2000);
 
     window.setTimeout(function (x) {
       var target = "ourpeople";
       _this.toogleCard(target);
-      $('html, body').animate({
-        scrollTop: $("#" + target).offset().top
-      }, 1000);
+      if (toSection == target) {
+        $('html, body').animate({
+          scrollTop: $("#" + target).offset().top
+        }, 1000);
+      }
+    }, 2000);
+
+    window.setTimeout(function (x) {
+      var target = "deliz";
+      _this.toogleCard(target);
+      if (toSection == target) {
+        $('html, body').animate({
+          scrollTop: $("#" + target).offset().top
+        }, 1000);
+      }
+    }, 2000);
+
+    window.setTimeout(function (x) {
+      var target = "ready";
+      _this.toogleCard(target);
+      if (toSection == target) {
+        $('html, body').animate({
+          scrollTop: $("#" + target).offset().top
+        }, 1000);
+      }
+    }, 2000);
+
+    window.setTimeout(function (x) {
+      var target = "startups";
+      _this.toogleCard(target);
+      if (toSection == target) {
+        $('html, body').animate({
+          scrollTop: $("#" + target).offset().top
+        }, 1000);
+      }
+    }, 2000);
+
+    window.setTimeout(function (x) {
+      var target = "size";
+      _this.toogleCard(target);
+      if (toSection == target) {
+        $('html, body').animate({
+          scrollTop: $("#" + target).offset().top
+        }, 1000);
+      }
+    }, 2000);
+
+    window.setTimeout(function (x) {
+      var target = "evolution";
+      _this.toogleCard(target);
+      if (toSection == target) {
+        $('html, body').animate({
+          scrollTop: $("#" + target).offset().top
+        }, 1000);
+      }
+    }, 2000);
+
+    window.setTimeout(function (x) {
+      var target = "proyection";
+      _this.toogleCard(target);
+      if (toSection == target) {
+        $('html, body').animate({
+          scrollTop: $("#" + target).offset().top
+        }, 1000);
+      }
     }, 2000);
   },
 
