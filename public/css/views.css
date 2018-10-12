@@ -374,6 +374,11 @@ main.about img.banner {
   font-size: 1em;
   text-decoration: underline;
 }
+@media only screen and (max-width: 900px) {
+  main.about img.banner {
+    padding-top: 65pt;
+  }
+}
 .ready-meals .row {
   display: -ms-flexbox;
   display: -ms-flex;
@@ -645,7 +650,7 @@ main.about img.banner {
   .card .nav {
     display: block;
     width: 100%;
-    height: auto;
+    height: 3.5em !important;
   }
   .card .content {
     display: block;
@@ -665,6 +670,10 @@ main.about img.banner {
   }
   .card .content .col.info {
     width: 60%;
+  }
+  .card .content .col.plus {
+    padding-left: 27%;
+    padding-top: 5%;
   }
 }
 .timeline {

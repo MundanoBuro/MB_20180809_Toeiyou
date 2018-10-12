@@ -361,7 +361,7 @@
   .card .nav {
     display: block;
     width: 100%;
-    height: auto;
+    height: 3.5em !important;
   }
   .card .content {
     display: block;
@@ -381,6 +381,10 @@
   }
   .card .content .col.info {
     width: 60%;
+  }
+  .card .content .col.plus {
+    padding-left: 27%;
+    padding-top: 5%;
   }
 }
 .timeline {

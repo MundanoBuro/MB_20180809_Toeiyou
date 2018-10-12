@@ -215,3 +215,8 @@ main.about img.banner {
   font-size: 1em;
   text-decoration: underline;
 }
+@media only screen and (max-width: 900px) {
+  main.about img.banner {
+    padding-top: 65pt;
+  }
+}
