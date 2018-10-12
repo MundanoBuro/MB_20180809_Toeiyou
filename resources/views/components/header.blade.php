@@ -1,3 +1,4 @@
+<div class="desktop">
 <div class="wrapper">
         <a href="/">
         <img class="logo" src="images/header/gi-header-logo.png">
@@ -162,3 +163,34 @@
 
         </ul>
     </div>
+</div>
+
+
+
+<div class="mobile">
+    <div class="wrapper" >
+            <a href="/">
+                <img class="logo" src="images/header/gi-header-logo.png">
+            </a>
+            <a v-on:click="toogleMenuMobile()" style="width: 100%;height:auto">
+                    <button 
+                    class="hamburger" 
+                    type="button" 
+                    style="float: right;margin: 0.5em;" 
+                    v-bind:class="UI.MENU.MOBILE.uClass"
+                    >
+                            <span class="hamburger-box">
+                              <span class="hamburger-inner"></span>
+                            </span>
+                          </button>
+            </a>
+            <ul class="menu" v-if="this.UI.MENU.MOBILE != ''">
+                    <li class="item"><a href="/about">NOSOTROS</a></li>
+                    <li class="item"><a href="/business">LINEAS DE NEGOCIOS</a></li>
+                    <li class="item"><a href="/industry">INFORMACIÒN FINANCIERA</a></li>
+                    <li class="item"><a href="/clients">CLIENTES</a></li>
+                    <li class="item"><a href="/contact">CONTACTO</a></li>
+            </ul>
+        </div>
+</div>
+    

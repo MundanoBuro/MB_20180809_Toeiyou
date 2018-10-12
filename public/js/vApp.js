@@ -112,6 +112,7 @@ var app = new Vue({
         class: "default"
       },
       MENU: {
+        MOBILE: "",
         ABOUT: {
           state: "",
           uClass: "default"
@@ -271,6 +272,15 @@ var app = new Vue({
   },
 
   methods: {
+    toogleMenuMobile: function toogleMenuMobile() {
+
+      if (this.UI.MENU.MOBILE == "hamburger--collapse is-active") {
+        this.UI.MENU.MOBILE = "";
+      } else {
+        this.UI.MENU.MOBILE = "hamburger--collapse is-active";
+      }
+      console.log(this.UI.MENU.MOBILE);
+    },
     onSetTranslate: function onSetTranslate() {
       console.log("onSetTranslate");
     },

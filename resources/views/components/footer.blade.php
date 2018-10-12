@@ -49,8 +49,8 @@
         </li>
         </ul>
 
-        <div class="terms"><a href="/terms">TERMINOS DE USO</a></div>
-        <div class="terms"><a href="/policies">POLITÍCAS DE DATOS</a></div>
+        <div class="terms"><a href="/terms">TÉRMINOS DE USO</a></div>
+        <div class="terms"><a href="/policies">POLÍTICAS DE DATOS</a></div>
 
     </div>
     <div class="row copyright">

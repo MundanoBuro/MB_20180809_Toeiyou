@@ -213,25 +213,91 @@ header .menu .item.hover:nth-child(3) .item-content {
   height: 300%;
 }
 
-@media only screen and (max-width: 800px) {
-  header .wrapper {
-    height: auto;
-    width: 100%;
-  }
-  header .wrapper img.logo {
-    display: none;
-  }
-
-  header .menu .item {
-    display: block;
-    img {
-      display: none;
-    }
-  }
-}
 header .item {
   cursor: pointer;
 }
 header span:hover {
   color: gray;
+}
+
+
+.mobile img.logo {
+    height: 83%;
+    width: auto;
+}
+
+
+
+header .menu-btn {
+  display: none;
+}
+
+header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+header .menu {
+  clear: none;
+  float: right;
+  max-height: none;
+}
+header .menu-icon {
+  display: none;
+}
+
+
+
+.mobile{display: none}
+.desktop{display: block;}
+@media  only screen and (max-width: 900px)  {
+
+  .mobile{display: block}
+  .desktop{display: none}
+
+  header .wrapper img.logo {
+    height: 83%;
+    width: auto;
+  }
+
+  header .wrapper {
+    width: 100%;
+}
+
+  header .menu {
+    display: block;
+    height: auto;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  header .menu .item {
+    display: block;
+    height: fit-content;
+    padding: 1.5em 0em;
+    margin: 0px;
+    background-color: white;
+}
+
+
+
 }

@@ -1,0 +1,131 @@
+section.news {
+  margin: 25px auto;
+  display: block;
+  max-width: 1000px;
+  width: 100%;
+}
+section .cover {
+  width: calc(48%);
+  margin-right: 2em;
+  display: inline-block;
+}
+section .cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .cover h2 {
+  background-color: green;
+}
+section .cover h2 span {
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+}
+section .cover h2 img {
+  width: 29px;
+  height: auto;
+  padding: 0.5em;
+  margin-left: 1em;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+  object-fit: inherit;
+}
+section.news .news {
+  width: calc(49%);
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1em solid #e5520f;
+  padding: 1em;
+  background-color: white;
+  vertical-align: top;
+}
+section.news .news .news-title {
+  float: left;
+  color: green;
+  font-size: 1.25em;
+  display: block;
+  width: 100%;
+}
+section.news .news .new-feed:nth-child(odd) .new-timestamp {
+  width: 8em;
+  padding: 0.5em;
+  margin: 0.5em 0.5em 0.5em 0em;
+  box-sizing: border-box;
+  background-color: green;
+  color: white;
+  display: inline-block;
+}
+section.news .news .new-feed:nth-child(odd) .new-timestamp .date {
+  font-size: 1.15em;
+}
+section.news .news .new-feed:nth-child(odd) .new-timestamp .time {
+  font-size: 1em;
+}
+section.news .news .new-feed:nth-child(even) .new-timestamp {
+  width: 8em;
+  padding: 0.5em;
+  margin: 0.5em 0.5em 0.5em 0em;
+  box-sizing: border-box;
+  background-color: orange;
+  color: white;
+  display: inline-block;
+}
+section.news .news .new-feed:nth-child(even) .new-timestamp .date {
+  font-size: 1.15em;
+}
+section.news .news .new-feed:nth-child(even) .new-timestamp .time {
+  font-size: 1em;
+}
+section.news .news .new-content {
+  display: inline-block;
+  margin-top: 7px;
+  padding-top: 8px;
+  vertical-align: top;
+  width: calc(88%);
+  height: calc(2em);
+  font-size: 0.8em;
+  overflow: hidden;
+  border-top: 2px solid red;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 900px) {
+  section .cover {
+    width: calc(100%);
+    margin: 0 auto;
+    display: block;
+  }
+  section .cover img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  section .cover h2 {
+    background-color: green;
+  }
+  section .cover h2 span {
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  section .cover h2 img {
+    width: 29px;
+    height: auto;
+    padding: 0.5em;
+    margin-left: 1em;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 100;
+    object-fit: inherit;
+  }
+  section.news .news {
+    width: calc(100%);
+    margin: 0 auto;
+    display: block !important;
+  }
+}

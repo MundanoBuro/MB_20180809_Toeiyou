@@ -2,7 +2,6 @@
   .wrapper {
     width: 100vw;
     height: 100%;
-
     .display-row-center-center();
     .justify-content(flex-start);
   }
@@ -45,4 +44,23 @@
   font-size: 1.5em;
 
   padding-left: 3.5em;
+}
+
+
+@media (max-width: 800px) {
+  .slider {
+    .wrapper {
+      width: 100vw;
+      height: 35vh;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .slider {
+    .wrapper {
+      width: 100vw;
+      height: 70vh;
+    }
+  }
 }
