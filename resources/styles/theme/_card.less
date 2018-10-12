@@ -171,3 +171,25 @@
     display: none;
   }
 }
+
+
+
+
+@media  only screen and (max-width: 900px)  {
+  .card .nav{display: block;width: 100%; height: auto;}
+  .card .content{display: block;width: 100%; height: auto;}
+  .card .wrapper{
+    flex-wrap: wrap;
+  }
+  .card .content .col {
+    display: inline-block;
+    width: 0%;
+    &.photos {
+      width: 30%;
+    }
+    &.info {
+      width: 60%;
+    }
+  }
+
+}

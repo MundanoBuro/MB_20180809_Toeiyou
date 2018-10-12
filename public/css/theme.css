@@ -357,6 +357,32 @@
 .card.hide .timeline .row {
   display: none;
 }
+@media only screen and (max-width: 900px) {
+  .card .nav {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .card .content {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .card .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card .content .col {
+    display: inline-block;
+    width: 0%;
+  }
+  .card .content .col.photos {
+    width: 30%;
+  }
+  .card .content .col.info {
+    width: 60%;
+  }
+}
 .timeline {
   height: -webkit-fit-content !important;
   height: -moz-fit-content !important;
