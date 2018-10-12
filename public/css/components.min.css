@@ -415,7 +415,7 @@ header .menu-icon {
     width: 100%;
   }
   header .menu {
-    display: block;
+    display: none;
     height: auto;
     background-color: white;
     margin: 0px;

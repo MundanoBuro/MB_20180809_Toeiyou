@@ -184,7 +184,7 @@
                             </span>
                           </button>
             </a>
-            <ul class="menu" v-if="this.UI.MENU.MOBILE != ''">
+            <ul class="menu" v-if="this.UI.MENU.MOBILE != ''" v-bind:style="[this.UI.MENU.MOBILE != '' ? {'display': 'block'} : {'display': 'none'}]">
                     <li class="item"><a href="/about">NOSOTROS</a></li>
                     <li class="item"><a href="/business">LINEAS DE NEGOCIOS</a></li>
                     <li class="item"><a href="/industry">INFORMACIÒN FINANCIERA</a></li>
