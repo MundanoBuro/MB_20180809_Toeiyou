@@ -11,7 +11,7 @@
         <div class="content">
         <div class="col photos">
         <div class="wrapper">
-        <img class="about-photo" src="images/business/deliz1.png">
+        <img class="about-photo" src="images/business/deliz1.jpg">
         <img class="about-photo" src="images/business/deliz2.png">
         </div>
         </div>
