@@ -42,7 +42,7 @@
         @for ($i = 1; $i <= count($photo_src); $i++)
         <div class="swiper-slide">
 
-            <div class="wrapper slide-bg" style="background-image:url('images/slider/i{{$photo_src[$i-1]}}.jpg')">
+            <div class="wrapper slide-bg" style="background-image:url('images/slider/i{{$photo_src[$i-1]}}-min.jpg')">
                 <h2 class="slide-title" data-swiper-parallax="-300">
                     {{$photo_title[$photo_src[$i-1] - 1]}}
                 </h2>
