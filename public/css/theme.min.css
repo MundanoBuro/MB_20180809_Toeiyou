@@ -363,6 +363,15 @@
     width: 100%;
     height: 3.5em !important;
   }
+  .card.hide .nav {
+    display: block;
+    width: 100%;
+    height: 3.5em !important;
+  }
+  .card .nav img,
+  .card .nav h2 {
+    max-width: 10em;
+  }
   .card .content {
     display: block;
     width: 100%;
@@ -374,6 +383,7 @@
   }
   .card .content .col {
     display: inline-block;
+    font-size: 0.9em;
     width: 0%;
   }
   .card .content .col.photos {
@@ -382,9 +392,42 @@
   .card .content .col.info {
     width: 60%;
   }
+  .card .content .col.info p {
+    font-size: 13px;
+  }
   .card .content .col.plus {
     padding-left: 27%;
     padding-top: 5%;
+  }
+  .card .content .col.photos img {
+    padding: 10%;
+  }
+  .card .content .col.photos .wrapper {
+    padding-top: 7pt;
+  }
+  .card .content .col.plus {
+    width: auto;
+    font-size: 13px;
+    padding-right: 10%;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .ready-meals .row .info {
+    width: auto;
+    padding-left: 11px;
+    padding-right: 33px;
+    font-size: 13px;
+  }
+  .ready-meals .row .logo {
+    width: 25%;
+    padding: 2%;
+  }
+  .ready-meals .row .logo {
+    width: 30%;
+    padding: 2%;
+    /* padding-left: 0px; */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 .timeline {
@@ -548,4 +591,21 @@
 #about-history .nav,
 .content {
   height: 55em;
+}
+@media only screen and (max-width: 900px) {
+  .timeline .time-item .color-block {
+    width: 3em;
+    height: 10em;
+  }
+  .timeline .time-mid {
+    width: 3em;
+  }
+  .timeline .row .text {
+    font-size: 13px;
+    height: 12em;
+    width: calc(100% - 10em);
+  }
+  .timeline .row .image {
+    width: 5em;
+  }
 }

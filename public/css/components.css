@@ -408,11 +408,36 @@ header .menu-icon {
     display: none;
   }
   header .wrapper img.logo {
-    height: 83%;
+    height: 4.5em;
+    display: block;
+    padding: 15%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     width: auto;
   }
   header .wrapper {
     width: 100%;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  header .wrapper a {
+    display: block;
+    width: auto;
   }
   header .menu {
     display: none;
@@ -422,6 +447,8 @@ header .menu-icon {
     padding: 0px;
     float: none;
     margin: 0 auto;
+    position: fixed;
+    top: 70px;
   }
   header .menu .item {
     display: block;
@@ -697,6 +724,35 @@ header .menu-icon {
   width: -moz-fit-content;
   width: fit-content;
 }
+@media (max-width: 800px) {
+  .footer .copyright {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
 /* Optional: Makes the sample page fill the window. */
 html,
 body {
@@ -720,6 +776,24 @@ body {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+}
+@media only screen and (max-width: 900px) {
+  .contact section.row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .col.map {
+    height: 400px;
+    width: 100%;
+  }
+  .col.form {
+    height: 400px;
+    width: 100%;
+  }
+  .contact .col {
+    padding: 2em !important;
+    margin: 0px !important ;
+  }
 }
 @font-face {
   font-family: "Raleway";
@@ -948,6 +1022,15 @@ body {
     width: 100%;
     height: 3.5em !important;
   }
+  .card.hide .nav {
+    display: block;
+    width: 100%;
+    height: 3.5em !important;
+  }
+  .card .nav img,
+  .card .nav h2 {
+    max-width: 10em;
+  }
   .card .content {
     display: block;
     width: 100%;
@@ -959,6 +1042,7 @@ body {
   }
   .card .content .col {
     display: inline-block;
+    font-size: 0.9em;
     width: 0%;
   }
   .card .content .col.photos {
@@ -967,9 +1051,42 @@ body {
   .card .content .col.info {
     width: 60%;
   }
+  .card .content .col.info p {
+    font-size: 13px;
+  }
   .card .content .col.plus {
     padding-left: 27%;
     padding-top: 5%;
+  }
+  .card .content .col.photos img {
+    padding: 10%;
+  }
+  .card .content .col.photos .wrapper {
+    padding-top: 7pt;
+  }
+  .card .content .col.plus {
+    width: auto;
+    font-size: 13px;
+    padding-right: 10%;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .ready-meals .row .info {
+    width: auto;
+    padding-left: 11px;
+    padding-right: 33px;
+    font-size: 13px;
+  }
+  .ready-meals .row .logo {
+    width: 25%;
+    padding: 2%;
+  }
+  .ready-meals .row .logo {
+    width: 30%;
+    padding: 2%;
+    /* padding-left: 0px; */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 .timeline {
@@ -1133,6 +1250,23 @@ body {
 #about-history .nav,
 .content {
   height: 55em;
+}
+@media only screen and (max-width: 900px) {
+  .timeline .time-item .color-block {
+    width: 3em;
+    height: 10em;
+  }
+  .timeline .time-mid {
+    width: 3em;
+  }
+  .timeline .row .text {
+    font-size: 13px;
+    height: 12em;
+    width: calc(100% - 10em);
+  }
+  .timeline .row .image {
+    width: 5em;
+  }
 }
 .contact .row {
   display: -ms-flexbox;

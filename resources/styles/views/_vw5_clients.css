@@ -124,40 +124,11 @@
   -ms-align-items: center;
   align-items: center;
 }
-main.about {
+.clients-logos {
   display: block;
-  margin: 0 auto;
   width: 100%;
-}
-main.about img.banner {
-  padding-top: 45pt;
-}
-.card.ourpeople .row {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-align-content: center;
-  align-content: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-}
-.card.ourpeople .row .logo {
-  width: 125pt;
-  padding: 25pt;
-}
-.ourpeople .row {
+  max-width: 1000px;
+  margin: 0 auto;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: -ms-flex;
@@ -178,75 +149,34 @@ main.about img.banner {
   -ms-align-items: center;
   align-items: center;
 }
-.ourpeople .row .row:nth-child(3) {
-  margin: 5em auto;
+.clients-logos .wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-align-content: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
 }
-.ourpeople .position {
+.clients-logos img {
   width: 33%;
-  margin: 3em auto;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-align-content: center;
-  align-content: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-}
-.ourpeople .position .title {
-  color: #961934;
-  font-size: 1.25em;
-  font-weight: 900;
-  text-align: center;
-}
-.ourpeople .position .name {
-  color: #8BC53F;
-  font-size: 1em;
-  text-decoration: underline;
+  display: block;
 }
 @media only screen and (max-width: 900px) {
-  main.about {
+  .clients-logos img {
+    width: 45%;
     display: block;
-    margin-top: 55pt;
-  }
-  img.banner {
-    padding-top: 12pt;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: left;
-    object-position: left;
-    width: 200vw;
-    height: 6em;
-    position: relative;
-    left: -6em;
-  }
-  main.about img.banner {
-    padding-top: 8pt;
-  }
-  .card.ourpeople .row .logo {
-    width: 95pt;
-    padding: 25pt;
-  }
-  .ourpeople .position {
-    width: 33%;
-    margin: 1em auto;
-  }
-  .ourpeople .position .name {
-    text-align: center;
-    padding-top: 0.5em;
-  }
-  .ourpeople .position .title {
-    font-size: 1em;
   }
 }

@@ -375,8 +375,38 @@ main.about img.banner {
   text-decoration: underline;
 }
 @media only screen and (max-width: 900px) {
+  main.about {
+    display: block;
+    margin-top: 55pt;
+  }
+  img.banner {
+    padding-top: 12pt;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: left;
+    object-position: left;
+    width: 200vw;
+    height: 6em;
+    position: relative;
+    left: -6em;
+  }
   main.about img.banner {
-    padding-top: 65pt;
+    padding-top: 8pt;
+  }
+  .card.ourpeople .row .logo {
+    width: 95pt;
+    padding: 25pt;
+  }
+  .ourpeople .position {
+    width: 33%;
+    margin: 1em auto;
+  }
+  .ourpeople .position .name {
+    text-align: center;
+    padding-top: 0.5em;
+  }
+  .ourpeople .position .title {
+    font-size: 1em;
   }
 }
 .ready-meals .row {
@@ -652,6 +682,15 @@ main.about img.banner {
     width: 100%;
     height: 3.5em !important;
   }
+  .card.hide .nav {
+    display: block;
+    width: 100%;
+    height: 3.5em !important;
+  }
+  .card .nav img,
+  .card .nav h2 {
+    max-width: 10em;
+  }
   .card .content {
     display: block;
     width: 100%;
@@ -663,6 +702,7 @@ main.about img.banner {
   }
   .card .content .col {
     display: inline-block;
+    font-size: 0.9em;
     width: 0%;
   }
   .card .content .col.photos {
@@ -671,9 +711,42 @@ main.about img.banner {
   .card .content .col.info {
     width: 60%;
   }
+  .card .content .col.info p {
+    font-size: 13px;
+  }
   .card .content .col.plus {
     padding-left: 27%;
     padding-top: 5%;
+  }
+  .card .content .col.photos img {
+    padding: 10%;
+  }
+  .card .content .col.photos .wrapper {
+    padding-top: 7pt;
+  }
+  .card .content .col.plus {
+    width: auto;
+    font-size: 13px;
+    padding-right: 10%;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .ready-meals .row .info {
+    width: auto;
+    padding-left: 11px;
+    padding-right: 33px;
+    font-size: 13px;
+  }
+  .ready-meals .row .logo {
+    width: 25%;
+    padding: 2%;
+  }
+  .ready-meals .row .logo {
+    width: 30%;
+    padding: 2%;
+    /* padding-left: 0px; */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 .timeline {
@@ -838,6 +911,23 @@ main.about img.banner {
 .content {
   height: 55em;
 }
+@media only screen and (max-width: 900px) {
+  .timeline .time-item .color-block {
+    width: 3em;
+    height: 10em;
+  }
+  .timeline .time-mid {
+    width: 3em;
+  }
+  .timeline .row .text {
+    font-size: 13px;
+    height: 12em;
+    width: calc(100% - 10em);
+  }
+  .timeline .row .image {
+    width: 5em;
+  }
+}
 .plots {
   width: 100%;
   max-width: 1000px;
@@ -923,6 +1013,28 @@ main.about img.banner {
 }
 .chartjs-size-monitor {
   height: 30em !important;
+}
+@media only screen and (max-width: 900px) {
+  .plot {
+    width: 100%;
+    height: 30em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border-top: 3px solid #961934;
+  }
+  #sizeOfMarket th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 0.7em;
+    text-align: left;
+    background-color: white;
+    color: #961934;
+  }
+  #sizeOfMarket td {
+    font-weight: 900;
+    padding: 20px 1em;
+    font-size: 10px;
+  }
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -1410,6 +1522,49 @@ main {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media only screen and (max-width: 900px) {
+  .col.map {
+    height: auto;
+    width: 100%;
+  }
+  .col.form {
+    height: 400px;
+    width: 100%;
+  }
+  .contact-info {
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-info .col-22 {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1em;
+    padding-left: 0em;
+  }
+  .contact-info .col-22:first-child {
+    width: 100%;
+  }
+}
 .clients-logos {
   display: block;
   width: 100%;
@@ -1464,6 +1619,19 @@ main {
   width: 33%;
   display: block;
 }
+@media only screen and (max-width: 900px) {
+  .clients-logos img {
+    width: 45%;
+    display: block;
+  }
+}
 * {
   font-family: "Avenir-Light";
+}
+@media only screen and (max-width: 900px) {
+  body,
+  html {
+    width: 100vw;
+    overflow-x: hidden;
+  }
 }

@@ -55,7 +55,11 @@
     </div>
     <div class="row copyright">
 
-        © @php echo date("Y"); @endphp Gastroinnova. Todos los derechos reservados. Desarrollado por www.mundanoburo.com
+        © @php echo date("Y"); @endphp Gastroinnova. 
+        
+        <div class=""> Todos los derechos reservados.</div> 
+        
+        <div class=""> Desarrollado por www.mundanoburo.com </div> 
 
     </div>
 

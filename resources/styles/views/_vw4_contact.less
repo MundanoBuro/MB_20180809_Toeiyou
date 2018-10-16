@@ -49,3 +49,37 @@
   .align-content(flex-start);
   .align-items(flex-start);
 }
+
+@media  only screen and (max-width: 900px)  {
+
+  
+.col.map {
+  height: auto;
+  width: 100%;
+}
+
+.col.form {
+  height: 400px;
+  width: 100%;
+}
+
+
+.contact-info {
+  .col-22 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    padding-left: 0em;
+    &:first-child {
+      width: 100%;
+    }
+  }
+
+    .flex-display(flex);
+    .flex-direction(row);
+    .flex-wrap(wrap);
+    .justify-content(center);
+    .align-content(center);
+    .align-items(center);
+  }
+}

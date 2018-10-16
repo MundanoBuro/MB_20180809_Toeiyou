@@ -172,7 +172,7 @@
             <a href="/">
                 <img class="logo" src="images/header/gi-header-logo.png">
             </a>
-            <a v-on:click="toogleMenuMobile()" style="width: 100%;height:auto">
+            <a v-on:click="toogleMenuMobile()" style="height:auto">
                     <button 
                     class="hamburger" 
                     type="button" 
@@ -184,7 +184,7 @@
                             </span>
                           </button>
             </a>
-            <ul class="menu" v-if="this.UI.MENU.MOBILE != ''" v-bind:style="[this.UI.MENU.MOBILE != '' ? {'display': 'block'} : {'display': 'none'}]">
+            <ul class="menu" v-if="this.UI.MENU.MOBILE != ''" v-bind:style="[this.UI.MENU.MOBILE != '' ? {'display': 'block'} : {'display': 'none'}]" style="width:100vw">
                     <li class="item"><a href="/about">NOSOTROS</a></li>
                     <li class="item"><a href="/business">LINEAS DE NEGOCIOS</a></li>
                     <li class="item"><a href="/industry">INFORMACIÒN FINANCIERA</a></li>

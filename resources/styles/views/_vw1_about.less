@@ -71,7 +71,40 @@ main.about {
 
 
 @media  only screen and (max-width: 900px)  {
-  main.about img.banner {
-    padding-top: 65pt;
+
+  main.about {
+    display: block;
+    margin-top: 55pt;
   }
+  
+  img.banner {
+    padding-top: 12pt;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: left;
+    object-position: left;
+    width: 200vw;
+    height: 6em;
+    position: relative;
+    left: -6em;
+  }
+  main.about img.banner {
+    padding-top: 8pt;
+}
+  .card.ourpeople .row .logo {
+    width: 95pt;
+    padding: 25pt;
+}
+.ourpeople .position {
+  width: 33%;
+  margin: 1em auto;}
+  .ourpeople .position .name{
+    text-align: center;
+    padding-top: 0.5em;
+  }
+  .ourpeople .position .title {
+ 
+    font-size: 1em;
+  
+}
 }

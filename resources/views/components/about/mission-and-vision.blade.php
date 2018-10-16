@@ -12,7 +12,7 @@
         <div class="content">
         <div class="col photos">
         <div class="wrapper">
-        <img class="about-photo" src="images/about/mission1.png">
+        <img class="about-photo" src="images/about/mission1.jpg">
         <img class="about-photo" src="images/about/mission2.png">
         <img class="about-photo" src="images/about/mission3.png">
         </div>
