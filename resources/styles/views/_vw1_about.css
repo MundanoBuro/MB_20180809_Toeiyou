@@ -124,13 +124,8 @@
   -ms-align-items: center;
   align-items: center;
 }
-main.about {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-}
-main.about img.banner {
-  padding-top: 45pt;
+img.banner {
+  padding-top: 0pt;
   height: 250px;
   width: 100%;
   display: block;
@@ -138,6 +133,14 @@ main.about img.banner {
   object-position: left;
   position: relative;
   left: 0px;
+}
+main.about {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+main.about img.banner {
+  padding-top: 45pt;
 }
 .card.ourpeople .row {
   display: -webkit-flex;
