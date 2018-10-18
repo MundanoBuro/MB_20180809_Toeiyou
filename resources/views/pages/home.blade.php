@@ -36,18 +36,16 @@ $state = ['current' => $current];
                     background-size: cover;
                     background-position: center;
                 }  
-                
-                 .swiper-bg.sd1{
-                     background-image: url("images/slider/i1.jpg");
-                 }
-                 .swiper-bg.sd2{background-image: url("images/slider/i1.jpg");}
-                 .swiper-bg.sd3{background-image: url("images/slider/i2.jpg");}
-                 .swiper-bg.sd4{background-image: url("images/slider/i3.jpg");}
-                 .swiper-bg.sd5{background-image: url("images/slider/i4.jpg");}
-                 .swiper-bg.sd6{background-image: url("images/slider/i5.jpg");}
-                 .swiper-bg.sd7{background-image: url("images/slider/i6.jpg");}
-                 .swiper-bg.sd8{background-image: url("images/slider/i7.jpg");}
-                 .swiper-bg.sd9{background-image: url("images/slider/i8.jpg");}
+       
+                 .swiper-bg.sd1{background-image: url("images/slider/slide1-min.jpg");}
+                 .swiper-bg.sd2{background-image: url("images/slider/slide2-min.jpg");}
+                 .swiper-bg.sd3{background-image: url("images/slider/slide3-min.jpg");}
+                 .swiper-bg.sd4{background-image: url("images/slider/slide4-min.jpg");}
+                 .swiper-bg.sd5{background-image: url("images/slider/slide5-min.jpg");}
+                 .swiper-bg.sd6{background-image: url("images/slider/slide6-min.jpg");}
+                 .swiper-bg.sd7{background-image: url("images/slider/slide7-min.jpg");}
+                 .swiper-bg.sd8{background-image: url("images/slider/slide8-min.jpg");}
+                 .swiper-bg.sd9{background-image: url("images/slider/slide4-min.jpg");}
 
                 </style>
 
