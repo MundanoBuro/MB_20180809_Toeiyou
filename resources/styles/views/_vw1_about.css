@@ -131,6 +131,13 @@ main.about {
 }
 main.about img.banner {
   padding-top: 45pt;
+  height: 250px;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: left;
+  position: relative;
+  left: 0px;
 }
 .card.ourpeople .row {
   display: -webkit-flex;

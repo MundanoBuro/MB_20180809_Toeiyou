@@ -39,7 +39,7 @@
 
 <style>
 .swiper-container {
-  height: 450px;
+  height: 500px;
   width: 100%;
 }
 
