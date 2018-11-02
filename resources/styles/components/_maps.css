@@ -28,11 +28,11 @@ body {
     flex-wrap: wrap;
   }
   .col.map {
-    height: 400px;
+    height: 520px;
     width: 100%;
   }
   .col.form {
-    height: 400px;
+    height: 520px;
     width: 100%;
   }
   .contact .col {
