@@ -47,7 +47,7 @@
             <div class="row orange time-item">
                 <div class="color-block"></div>
                 <div class="image">
-                    <img src="images/timeline/date4.png">
+                    <img src="images/figures/fig1.png">
                 </div>
                 <div class="text">
                 Desde mediados de 2016 se inicia el desarrollo del proyecto DELIZ destinado a convertirse en el de mayor impacto en la empresa 2017.</div>
@@ -60,7 +60,7 @@
                <div class="row red time-item">
                 <div class="color-block">2017</div>
                 <div class="image">
-                    <img src="images/timeline/date5.png">
+                    <img src="images/figures/fig7.png">
                 </div>
                 <div class="text">
                En diciembre 2017 se inaugura el primer local

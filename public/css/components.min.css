@@ -761,7 +761,7 @@ body {
   padding: 0;
 }
 .col.map {
-  height: 400px;
+  height: 510px;
   width: 50%;
 }
 .col.map #map {
@@ -769,7 +769,7 @@ body {
   height: 290px;
 }
 .col.form {
-  height: 400px;
+  height: 500px;
   width: 50%;
 }
 .contact section.row {
