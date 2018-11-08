@@ -12,7 +12,7 @@ Gastronómicas</h2>
 <div class="content" style="height: 40em;">
 
     <div class="row">
-        <img class="logo" src="images/business/startups1.png">
+        <img class="logo" src="images/business/smokey.jpg">
         <div class="info">
             <h2>SMOKY MONKEY</h2>
             <p>Restaurant de parrilla y BBQ, con una oferta
@@ -29,7 +29,7 @@ combinada con  coctelería clásica.</p>
     </div>
 
     <div class="row">
-        <img class="logo"  src="images/business/startups2.png">
+        <img class="logo"  src="images/business/logoBukara.png">
         <div class="info">
             <h2>RESTAURANTE
 BUKARA</h2>
